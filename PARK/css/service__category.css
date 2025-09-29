@@ -1,0 +1,20 @@
+.service__category {
+  width: 300px;
+  height: 470px;
+}
+.service__category-buttonwrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.service__category button {
+  margin-left: 40px;
+  font-size: 13px;
+  line-height: 1.4;
+
+  color: #1e1e1eb3;
+  background-color: white;
+  padding: 8px 15px;
+  border: 1px solid rgba(30, 30, 30, 0.2);
+  border-radius: 20px;
+}
