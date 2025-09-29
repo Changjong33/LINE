@@ -1,4 +1,25 @@
-.loading{
-    width:100vw;
-    height:100vh;
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+}
+.loadingGreenBox {
+  width: 35%;
+  height: 20%;
+  background-color: #07b53b;
+  position: absolute;
+  top: 35%;
+  left: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .loadingTransparentBox {
+} */
+.loadingGreenBoxText {
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  margin-right: 5%;
 }
