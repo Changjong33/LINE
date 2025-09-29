@@ -1,0 +1,53 @@
+body {
+  overflow-x: hidden;
+}
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+  position: fixed;
+  z-index:9999;
+}
+.loadingGreenBox {
+  width: 35%;
+  height: 15%;
+  background-color: #07b53b;
+  position: absolute;
+  top: 35%;
+  left: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.loadingWhiteBox{
+  background-color: white;
+    width: 35%;
+  height: 15%;
+    position: absolute;
+  top: 35%;
+  left: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+/* .loadingTransparentBox{
+    background-image: url("img/hero1.jpg");
+    width: 25%;
+  height: 15%;
+    position: absolute;
+  top: 35%;
+  left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:4;
+} */
+.loadingGreenBoxText {
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  margin-right: 5%;
+}
