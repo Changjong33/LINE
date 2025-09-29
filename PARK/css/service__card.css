@@ -1,0 +1,12 @@
+.service__card picture img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.service__card-wrapper {
+  width: 890px;
+  margin-left: 310px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
