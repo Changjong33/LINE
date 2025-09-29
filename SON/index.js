@@ -1,4 +1,5 @@
 const loading = document.querySelector("#loading");
+<<<<<<< HEAD
 const loadingGreenBox=document.querySelector('#loadingGreenBox')
 const loadingWhiteBox=document.querySelector('#loadingWhiteBox')
 const loadingTransparentBox=document.querySelector('#loadingTransparentBox')
@@ -12,11 +13,21 @@ const keyframes = [
 ];
 const option = {
   duration: 1000,
+=======
+const keyframes = [
+  { opacity: 1, transform: "translateX(-100px)" },
+  { opacity: 1, transform: "translateX(0px)" },
+  { opacity: 1, transform: "translateX(100px)" },
+];
+const option = {
+  duration: 500,
+>>>>>>> c875972aa93d11b277f99a3c8e53b6d911b41c27
   easing: "linear",
   fill: "forwards",
 };
 
 window.addEventListener("load", () => {
+<<<<<<< HEAD
   loadingWhiteBox.style.transition = "left 1s linear";
   loadingWhiteBox.style.left = "100%";
   setTimeout(()=>{
@@ -30,4 +41,7 @@ window.addEventListener("load", () => {
   setTimeout(()=>{
     loading.style.display="none"
   },2000)
+=======
+  loading.animate(keyframes, option);
+>>>>>>> c875972aa93d11b277f99a3c8e53b6d911b41c27
 });
