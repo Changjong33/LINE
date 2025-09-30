@@ -14,7 +14,7 @@
   align-items: center;
   position: relative;
 }
-.ko > h1 {
+.ko > div > h1 {
   position: absolute;
   top: 30px;
   left: 30px;
@@ -22,7 +22,7 @@
 .headerMenu {
   position: relative;
   text-align: center;
-  line-height: 3.5;
+  line-height: 4.5;
   width: 520px;
   height: 100%;
   margin: 0 auto;
