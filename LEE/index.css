@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-#mainService {
+#LmainService {
   width: 100%;
   max-width: 1200px;
   height: 1433px;
@@ -20,13 +20,10 @@ body {
 }
 
 /* 중간 점선 */
-#mainService .grid {
+#LmainService .Lgrid {
   position: absolute;
-<<<<<<< HEAD
   height: 100%;
-=======
   height: 1433px;
->>>>>>> 84a6cb58830cdc85ae62e06f457b1a58efaeb85b
   top: 0px;
   left: 50%;
   width: 1px;
@@ -41,7 +38,7 @@ body {
   );
 }
 /* 점선 위 동그라미 */
-#mainService .grid::before {
+#LmainService .Lgrid::before {
   content: "";
   position: absolute;
   display: inline-block;
@@ -56,7 +53,7 @@ body {
 }
 
 /* 그리드 중간 동그라미 */
-#mainService .grid::after {
+#LmainService .Lgrid::after {
   content: "";
   position: absolute;
   width: 8px;
@@ -68,7 +65,7 @@ body {
   top: 50%;
 }
 
-#mainService .grid .dot.bottom {
+#LmainService .Lgrid .Ldot.bottom {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -87,7 +84,7 @@ body {
 }
 
 /* 링크 아이콘 이미지 */
-.linkIcon img {
+.LlinkIcon img {
   position: relative;
   width: 80px;
   height: 80px;
@@ -95,7 +92,7 @@ body {
   border-radius: 16px;
 }
 /* 텍스트 아레아, 이미지 아레아 전체 */
-.service_Cnt {
+.Lservice_Cnt {
   width: 100%;
   height: 679px;
   display: flex;
@@ -104,13 +101,13 @@ body {
   padding: 85px 0px;
 }
 
-.service {
+.Lservice {
   display: flex;
   width: 100%;
   height: 509px;
 }
 
-.text_area {
+.Ltext_area {
   line-height: 1.7;
   padding: 0px 0px 0px 40px;
   z-index: 1;
@@ -130,19 +127,19 @@ span {
   font-weight: 500;
 }
 
-.desc {
+.Ldesc {
   width: 480px;
   font-size: 18px;
   color: #777777;
   margin: 0 0 60px;
 }
 
-.link_tree {
+.Llink_tree {
   display: flex;
 }
 
-.link_tree .apple,
-.google {
+.Llink_tree .Lapple,
+.Lgoogle {
   display: flex;
   width: 60px;
   height: 60px;
@@ -156,25 +153,25 @@ span {
   margin: 0px 4px 0px 0px;
 }
 
-.link_tree .apple:hover {
+.Llink_tree .Lapple:hover {
   border: 4px solid #07b53b;
   background-color: #07b53b;
 
   color: #fff;
 }
 
-.link_tree .google:hover {
+.Llink_tree .Lgoogle:hover {
   border: 4px solid #07b53b;
   background-color: #07b53b;
 
   color: #fff;
 }
 
-.link_tree i {
+.Llink_tree i {
   font-size: 25px;
 }
 
-.site_link {
+.Lsite_link {
   display: flex;
   width: 145px;
   height: 60px;
@@ -189,25 +186,25 @@ span {
   font-size: 14px;
 }
 
-.site_link i {
+.Lsite_link i {
   font-size: 25px;
   font-weight: 50;
 }
 
-.site_link:hover {
+.Lsite_link:hover {
   border: 4px solid #07b53b;
   background-color: #07b53b;
 
   color: #fff;
 }
 
-.image_area {
+.Limage_area {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.image_area .first_img {
+.Limage_area .Lfirst_img {
   position: absolute;
   top: 0;
   left: 0;
@@ -219,7 +216,7 @@ span {
   margin-left: 3px;
 }
 
-.image_area .second_img {
+.Limage_area .Lsecond_img {
   position: absolute;
   top: 0;
   right: 3px;
@@ -230,18 +227,18 @@ span {
   z-index: 2;
 }
 
-.music {
+.Lmusic {
   line-height: 1.7;
   padding: 0px 40px 0px 0px;
   z-index: 1;
 }
 
-.music {
+.Lmusic {
   position: relative;
   height: 400px;
 }
 
-.music .grid {
+.Lmusic .Lgrid {
   position: absolute;
   height: 100%;
   top: 0px;
@@ -259,7 +256,7 @@ span {
 }
 
 /* 점선 위 동그라미 */
-.music .grid::before {
+.Lmusic .Lgrid::before {
   content: "";
   position: absolute;
   display: inline-block;
