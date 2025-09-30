@@ -16,11 +16,13 @@ langItems.forEach((item) => {
 const menuItems = document.querySelectorAll(
   ".SheaderMenu > li:not(.ScurrentLine)"
 );
+
+// 헤더 클릭시 아래 라인 따라오는 것 이해 다 못했음 이해해야함...
 const indicator = document.querySelector(".ScurrentLine");
 
 menuItems.forEach((item) => {
   item.addEventListener("click", (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
 
     menuItems.forEach((el) => el.classList.remove("current"));
     item.classList.add("current");
@@ -33,5 +35,22 @@ menuItems.forEach((item) => {
 
     indicator.style.left = `${left}px`;
     indicator.style.width = `${width}px`;
+  });
+});
+
+
+// 요건 버튼 호버했을 때 안에 아이콘 바뀌는 애니메이션
+const buttons = document.querySelectorAll(".SdownloadBtn");
+
+buttons.forEach((btn) => {
+  const icon = btn.querySelector("i");
+  const originalClass = icon.className;
+
+  btn.addEventListener("mouseenter", () => {
+    icon.className = "ri-download-fill";
+  });
+
+  btn.addEventListener("mouseleave", () => {
+    icon.className = originalClass;
   });
 });
