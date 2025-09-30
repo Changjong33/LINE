@@ -1,24 +1,57 @@
-.mvArea {
+.SmvArea {
   position: relative;
   width: 100vw;
   height: 100vh;
   min-width: 1200px;
   line-height: 1.5;
 }
-.mvText {
+.SmvText {
+  /* border: 1px solid red; */
   position: absolute;
   top: 35%;
   left: 10%;
 }
-.mainTitle {
+.SmainTitle {
   font-size: 140px;
   font-weight: 700;
   color: white;
 }
-.mvSubText {
+.SmvSubText {
   font-size: 40px;
-  text-indent: 8px;
-  margin-bottom: 20px;
+  text-indent: 8px; /* 안쪽으로 들여쓰기 하는 느낌인데 8px로 줘서 반응형 할 때 문제 생길수도*/
+  margin-bottom: 1%;
   font-weight: 400;
   color: white;
+  margin-bottom: 50px;
+}
+.SmDownload {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+.SiconText {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 10px;
+}
+.SiconText > p {
+  color: white;
+}
+.SdownloadBtnList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-top: 10px;
+}
+.SdownloadBtn {
+  font-size: 30px;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+}
+.SiconText > img {
+  object-fit: contain;
 }

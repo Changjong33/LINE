@@ -1,4 +1,4 @@
-.service__category {
+.Pservice__category {
   width: 100%;
   max-width: 1200px;
 
@@ -6,48 +6,52 @@
   justify-content: flex-end;
 }
 
-.service__card {
+.Pservice__card {
   width: 270px;
   height: 340px;
   background-color: transparent;
   border-radius: 4px;
   background-color: white;
-  border: 1px solid red;
+
   padding: 30px;
   position: relative;
-  margin-left: 40px;
+  box-shadow: 10px 10px 20px -20px black;
+  overflow: hidden;
 }
 
-.service__card img {
+.Pservice__card img {
   width: 70px;
   height: 70px;
   object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
 }
 
-.service__card-wrapper {
+.Pservice__card-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
+  gap: 40px;
   position: relative;
 }
 
-.card__textarea {
+.Pcard__textarea {
   display: flex;
   flex-direction: column;
   line-height: 20px;
 }
 
-.card__textarea-title {
+.Pcard__textarea-title {
   font-weight: bold;
   font-size: 25px;
   margin: 16px 0px;
+  line-height: 30px;
 }
-.card__textarea-sub {
+.Pcard__textarea-sub {
   color: #616161;
   font-size: 14px;
 }
 
-.card__textarea-more {
+.Pcard__textarea-more {
   font-size: 25px;
   color: #616161;
   opacity: 0.5;
@@ -57,22 +61,67 @@
   left: 30px;
 }
 
-.card__linkarea {
-  width: 270px;
-  height: 340px;
+.Pcard__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.Pcard__overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.Pcard__linkarea {
   gap: 20px;
   position: absolute;
-  top: 0px;
-  left: 60px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.card__linkarea-button {
+.Pcard__linkarea-button {
   width: 150px;
   padding: 16px;
+  color: white;
+
   border: 1px solid hsla(0, 0%, 100%, 0.3);
-  font-size: 16px;
-  font-weight: 400;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.Pcard__linkarea-button i {
+  font-size: 20px;
+}
+
+.Pcard__linkarea-button:hover {
+  background-color: rgb(24, 206, 24);
+}
+
+.ri-download-line {
+  display: none;
+}
+
+.Pcard__linkarea-button:hover > .icon {
+  display: none;
+}
+
+.Pcard__linkarea-button:hover > .ri-download-line {
+  display: block;
 }

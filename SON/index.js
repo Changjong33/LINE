@@ -1,6 +1,6 @@
-const currentLang = document.querySelector(".currentLang");
-const langMenu = document.querySelector(".langMenu");
-const langItems = document.querySelectorAll(".langMenu li");
+const currentLang = document.querySelector(".ScurrentLang");
+const langMenu = document.querySelector(".SlangMenu");
+const langItems = document.querySelectorAll(".SlangMenu li");
 
 currentLang.addEventListener("click", () => {
   langMenu.classList.toggle("show"); 
