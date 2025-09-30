@@ -22,7 +22,11 @@ body {
 /* 중간 점선 */
 #mainService .grid {
   position: absolute;
+<<<<<<< HEAD
+  height: 100%;
+=======
   height: 1433px;
+>>>>>>> 84a6cb58830cdc85ae62e06f457b1a58efaeb85b
   top: 0px;
   left: 50%;
   width: 1px;
