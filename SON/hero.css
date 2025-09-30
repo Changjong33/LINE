@@ -6,6 +6,7 @@
   line-height: 1.5;
 }
 .SmvText {
+  /* border: 1px solid red; */
   position: absolute;
   top: 35%;
   left: 10%;
@@ -21,31 +22,36 @@
   margin-bottom: 1%;
   font-weight: 400;
   color: white;
+  margin-bottom: 50px;
 }
-.SmvDownloadicon > img {
-  position: absolute;
-  top: 0%;
-  left: 50%;
+.SmDownload {
   /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
 }
-.SmvDownloadicon > p {
-  position: absolute;
-  left: 200%;
-  bottom: 10%;
-  width: 100px; /*여기 모바일로 하면 px로 줘서 */
-  color: white;
-  /* border: 1px solid red; */
-}
-.SdownloadeButton {
-  border: 1px solid white;
-  width: 8%;
-  height: 60px;
-  border-radius: 5px;
-}
-.downloadWrapper {
+.SiconText {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+  gap: 20px;
+  margin-left: 10px;
+}
+.SiconText > p {
+  color: white;
+}
+.SdownloadBtnList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-top: 10px;
+}
+.SdownloadBtn {
+  font-size: 30px;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+}
+.SiconText > img {
+  object-fit: contain;
 }
