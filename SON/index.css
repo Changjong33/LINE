@@ -5,6 +5,8 @@
   opacity: 0.95;
   background: #fff;
   z-index: 99999;
+  /* top: 0; 
+  left: 0; */
 }
 .Sko > div {
   height: 100%;
