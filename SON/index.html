@@ -4,26 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="hero.css" />
 
     <script src="index.js" defer></script>
   </head>
   <body>
-    <section id="loading" class="loading">
-      <div id="loadingGreenBox" class="loadingGreenBox">
-        <p id="loadingGreenBoxText" class="loadingGreenBoxText">Life of LiNE</p>
+    <header class="ko">
+      <div>
+        <!-- 라인 로고 -->
+        <h1>
+          <a href="">
+            <div
+              class="onlyPc image-warpper"
+              style="
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+                width: 43px;
+                height: 16px;
+              "
+            >
+              <img
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: center center;
+                  opacity: 1;
+                "
+                src="img/icon-title-pc_1.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="onlySp image-warpper"
+              style="
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+                width: 38px;
+                height: 14px;
+              "
+            >
+              <!-- <img src="img/라인 로고.png" alt="" /> -->
+            </div>
+          </a>
+        </h1>
+        <!-- 1 nav Life on LINE 커뮤니케이션 서비스 버튼 -->
+        <ul class="headerMenu onlyPc">
+          <li><a href="">Life on LINE</a></li>
+          <li><a href="">커뮤니케이션 앱</a></li>
+          <li><a href="">서비스</a></li>
+          <li
+            class="currentLine"
+            style="left: 0px; width: 93px; transition: none"
+          ></li>
+        </ul>
+        <!-- 2 현재 언어+ 로고-->
+        <ul class="langMenuTop fonL">
+          <li class="iconLang onlyPc">
+            <div class="image-warpper" style="position: relative; overflow: hidden; display:inline-block;width: 20px;height: 20px;">
+              <img aria-hidden="true" src="img/langIcon.png" alt style="position: absolute; top:0px; left:0px; width:100%; height:100%; object-fit: cover; object-position: center center; opacity: 0; transition-delay: 500ms;">
+            </div>
+          </li>
+          <li class="iconLang onlySp"></li>
+          <li class="currentLang"></li>
+        </ul>
+        <!--3 언어 선택하는 박스 있는 곳 -->
+        <ul class="fonL langMenu show">
+          <li class="otherLang">
+            <a href="">EN</a>
+          </li>
+          <li class="otherLang">
+            <a href="">JP</a>
+          </li>
+          <li class="current otherLang">
+            <a href="">KR</a>
+          </li>
+          <li class="otherLang">
+            <a href="">TW</a>
+          </li>
+          <li class="otherLang">
+            <a href="">TH</a>
+          </li>
+          <li class="otherLang">
+            <a href="">ID</a>
+          </li>
+        </ul>
       </div>
-      <div id ="loadingWhiteBox" class="loadingWhiteBox"></div>
-      <div id="loadingTransparentBox" class="loadingTransparentBox"></div>
-    </section>
-    <section class="hero">
-      <picture class="heroImg">
-        <img id="heroImg1" class= "heroImg1" src="img/hero1.jpg" alt="">
-      </picture>
-    </section>
-      <div id="loadingTransparentBox" class="loadingTransparentBox"></div>
-    </section>
+    </header>
+    <main>
+      <div class="mvArea">
+        <div class="mvText">
+          <div class="fontL mainTitle">Life on LINE</div>
+          <div class="mvSubText">라인은 언제나 사용자와 함께 합니다.</div>
+          <div class="mvDownload"></div>
+        </div>
+        <img src="img/hero1.jpg" alt="" />
+      </div>
+    </main>
   </body>
 </html>
