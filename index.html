@@ -11,6 +11,7 @@
     />
     <!--SON-->
     <link rel="stylesheet" href="SON/index.css" />
+    <link rel="stylesheet" href="SON/hero.css">
     <script src="SON/index.js" defer></script>
     <!--LEE-->
     <link rel="stylesheet" href="LEE/index.css" />
@@ -23,31 +24,46 @@
   </head>
   <body>
     <!--로딩 화면(SON)-->
-    <section class="loading">
-      <div class="loadingGreenBox"></div>
-      <p class="loadingGreenBoxText">Life of LiNE</p>
+    <section id="loading" class="loading">
+      <div id="loadingGreenBox" class="loadingGreenBox">
+        <p id="loadingGreenBoxText" class="loadingGreenBoxText">Life of LiNE</p>
+      </div>
+      <div id ="loadingWhiteBox" class="loadingWhiteBox"></div>
+      <div id="loadingTransparentBox" class="loadingTransparentBox"></div>
+    </section>
+    <section class="hero">
+      <picture class="heroImg">
+        <img id="heroImg1" class= "heroImg1" src="SON/img/hero1.jpg" alt="">
+      </picture>
+    </section>
+      <div id="loadingTransparentBox" class="loadingTransparentBox"></div>
     </section>
     <!--섹션 2(LEE)-->
-    <div class="service">
-      <div class="line_news">
-        <div class="text_area">
-          <h3>LINE NEWS</h3>
-          <span>지금 화제가 되고 있는 <br />글로벌 뉴스</span>
-          <div class="desc">
-            바쁜 일과 중에도 글로벌 이슈를 알고 싶다면 라인 뉴스를 <br />
-            추천합니다. 정치, 경제부터 연예계 소식까지 모든 장르의 뉴스를
-            <br />전하는 라인 뉴스에는 '알고 싶은 정보'가 가득합니다.
+    <section id="mainService">
+      <div class="grid"></div>
+      <div class="service_Cnt">
+        <div class="service">
+          <div class="text_area">
+            <picture class="linkIcon"
+              ><img src="LEE/line_news_img.png" alt=""
+            /></picture>
+            <h3>LINE NEWS</h3>
+            <span>지금 화제가 되고 있는 <br />글로벌 뉴스</span>
+            <div class="desc">
+              바쁜 일과 중에도 글로벌 이슈를 알고 싶다면 라인 뉴스를 <br />
+              추천합니다. 정치, 경제부터 연예계 소식까지 모든 장르의 뉴스를
+              <br />전하는 라인 뉴스에는 '알고 싶은 정보'가 가득합니다.
+            </div>
+            <div class="site_link">
+              <i class="ri-external-link-line"></i>자세히 보기
+            </div>
           </div>
-          <div class="site_link">
-            <i class="ri-external-link-line"></i>자세히 보기
+          <div class="image_area">
+            <picture><img src="LEE/line_img.png" alt="" /></picture>
           </div>
-        </div>
-        <div class="image_area">
-          <picture><img src="line_img.png" alt="" /></picture>
         </div>
       </div>
-    </div>
-    <div></div>
+    </section>
     <!--섹션 3(PARK)-->
     <main class="service">
       <div class="service__header">
@@ -70,8 +86,8 @@
         </ul>
       </section>
       <section class="service__card-wrapper">
-        <article>
-          <picture><img src="img/service_img.png" alt="" /></picture>
+        <article class="service__card">
+          <img src="PARK/img/service_img.png" alt="" />
           <div class="card__textarea">
             <h2 class="card__textarea-title"></h2>
             <span class="card__textarea-sub"></span>
