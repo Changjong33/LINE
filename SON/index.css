@@ -4,7 +4,7 @@
   height: 75px;
   opacity: 0.95;
   background: #fff;
-  z-index: 11;
+  z-index: 99999;
 }
 .Sko > div {
   height: 100%;
