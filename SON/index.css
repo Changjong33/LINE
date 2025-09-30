@@ -27,7 +27,6 @@
   height: 100%;
   margin: 0 auto;
   white-space: nowrap;
-  font-family: SFPro, Arial, Noto Sans JP, AppleSDGothicNeo, sans-serif;
   font-weight: 700;
 }
 .headerMenu > li {
@@ -35,4 +34,43 @@
   margin-right: 80px;
   line-height: 1.23;
   padding-bottom: 4px;
+}
+.langMenuTop {
+  display: block;
+  width: 55px;
+  top: 26px;
+  right: 30px;
+  text-align: center;
+  color: rgb(30, 30, 30);
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+.currentLang {
+  font-size: 14px;
+}
+.langMenu {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  width: 100px;
+  right: 5px;
+  top: 70px;
+}
+
+.langMenu.show {
+  display: block;
+}
+
+.langMenu li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.langMenu li:hover {
+  background-color: #eee;
 }
