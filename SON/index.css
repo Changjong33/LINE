@@ -5,10 +5,15 @@
   opacity: 0.95;
   background: #fff;
   z-index: 99999;
+<<<<<<< HEAD
+  top: 0px;
+  left: 0px;
+=======
   top: 0;
   left: 0;
+>>>>>>> 6f1199eb0c45740bf3f42242d1a647a8410460b5
 }
-.Sko > div {
+.Sko > .Sko-box {
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -16,7 +21,7 @@
   align-items: center;
   position: relative;
 }
-.Sko > div > h1 {
+.Sko > .Sko-box > .Sko-bbox {
   position: absolute;
   top: 30px;
   left: 30px;
