@@ -1,9 +1,12 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   margin: 0;
+
+  overflow-x: hidden;
 }
 
 #mainService {
@@ -63,14 +66,20 @@ body {
 
 #mainService .grid .dot.bottom {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  border: 1px solid rgba(30, 30, 30, 0.3);
+  border: 1px solid #b2b2b2;
   background-color: #fff;
   box-sizing: border-box;
-  left: -4px;
-  bottom: 0; /* 그리드 끝 */
+  left: -10px;
+  bottom: -30px;
+
+  color: #b2b2b2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 링크 아이콘 이미지 */
