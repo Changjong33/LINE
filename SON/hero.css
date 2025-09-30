@@ -1,24 +1,51 @@
-.mvArea {
+.SmvArea {
   position: relative;
   width: 100vw;
   height: 100vh;
   min-width: 1200px;
   line-height: 1.5;
 }
-.mvText {
+.SmvText {
   position: absolute;
   top: 35%;
   left: 10%;
 }
-.mainTitle {
+.SmainTitle {
   font-size: 140px;
   font-weight: 700;
   color: white;
 }
-.mvSubText {
+.SmvSubText {
   font-size: 40px;
-  text-indent: 8px;
-  margin-bottom: 20px;
+  text-indent: 8px; /* 안쪽으로 들여쓰기 하는 느낌인데 8px로 줘서 반응형 할 때 문제 생길수도*/
+  margin-bottom: 1%;
   font-weight: 400;
   color: white;
+}
+.SmvDownloadicon > img {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  /* border: 1px solid red; */
+}
+.SmvDownloadicon > p {
+  position: absolute;
+  left: 200%;
+  bottom: 10%;
+  width: 100px; /*여기 모바일로 하면 px로 줘서 */
+  color: white;
+  /* border: 1px solid red; */
+}
+.SdownloadeButton {
+  border: 1px solid white;
+  width: 8%;
+  height: 60px;
+  border-radius: 5px;
+}
+.downloadWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }

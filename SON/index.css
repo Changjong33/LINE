@@ -1,4 +1,4 @@
-.ko {
+.Sko {
   position: fixed;
   width: 100%;
   height: 75px;
@@ -6,7 +6,7 @@
   background: #fff;
   z-index: 11;
 }
-.ko > div {
+.Sko > div {
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -14,25 +14,63 @@
   align-items: center;
   position: relative;
 }
-.ko > h1 {
+.Sko > div > h1 {
   position: absolute;
   top: 30px;
   left: 30px;
 }
-.headerMenu {
+.SheaderMenu {
   position: relative;
   text-align: center;
-  line-height: 3.5;
+  line-height: 4.5;
   width: 520px;
   height: 100%;
   margin: 0 auto;
   white-space: nowrap;
-  font-family: SFPro, Arial, Noto Sans JP, AppleSDGothicNeo, sans-serif;
   font-weight: 700;
 }
-.headerMenu > li {
+.SheaderMenu > li {
   display: inline-block;
   margin-right: 80px;
   line-height: 1.23;
   padding-bottom: 4px;
+}
+.SlangMenuTop {
+  display: block;
+  width: 55px;
+  top: 26px;
+  right: 30px;
+  text-align: center;
+  color: rgb(30, 30, 30);
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+.ScurrentLang {
+  font-size: 14px;
+}
+.SlangMenu {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  width: 100px;
+  right: 5px;
+  top: 70px;
+}
+
+.SlangMenu.show {
+  display: block;
+}
+
+.SlangMenu li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.SlangMenu li:hover {
+  background-color: #eee;
 }

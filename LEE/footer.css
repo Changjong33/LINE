@@ -1,0 +1,26 @@
+.Lko {
+  width: 100%;
+  padding: 0 20px 41px;
+  margin: 0 auto;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LdownloadLinks {
+  display: flex;
+  width: 100%;
+  max-width: 1160px;
+  height: 100px;
+  border: 1px solid red;
+  top: 0;
+  left: 0;
+}
+
+.LdownloadLinks ul {
+  display: flex;
+  margin: 0px 0px 36px;
+  padding: 30px 0px;
+  font-size: 20px;
+}
