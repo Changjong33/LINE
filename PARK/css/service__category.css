@@ -1,7 +1,7 @@
-.service__category {
+.Pservice__category {
   margin-left: 310px;
 }
-.service__category-buttonwrapper {
+.Pservice__category-buttonwrapper {
   width: 300px;
   height: 470px;
   gap: 15px;
@@ -12,7 +12,7 @@
   align-items: flex-start;
 }
 
-.service__cartegory-button {
+.Pservice__cartegory-button {
   margin-left: 40px;
   font-size: 13px;
   font-weight: bold;
