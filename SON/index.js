@@ -74,3 +74,7 @@ const clickList=(btn,target)=>{
 clickList("SclickFirstBtn","SmvTarget1")
 clickList("SclickSecondBtn","SmvTarget2")
 clickList("SclickThirdBtn","SmvTarget3")
+
+
+//
+
