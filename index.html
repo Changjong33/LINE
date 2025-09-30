@@ -5,13 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="reset.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
     <!--SON-->
     <link rel="stylesheet" href="SON/index.css" />
-    <link rel="stylesheet" href="SON/hero.css">
+    <link rel="stylesheet" href="SON/hero.css" />
     <script src="SON/index.js" defer></script>
     <!--LEE-->
     <link rel="stylesheet" href="LEE/index.css" />
@@ -20,28 +16,142 @@
     <link rel="stylesheet" href="PARK/css/index.css" />
     <link rel="stylesheet" href="PARK/css/service__header.css" />
     <link rel="stylesheet" href="PARK/css/service__category.css" />
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="PARK/css/service__card.css" />
+    <script src="PARK/index.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--로딩 화면(SON)-->
-    <section id="loading" class="loading">
-      <div id="loadingGreenBox" class="loadingGreenBox">
-        <p id="loadingGreenBoxText" class="loadingGreenBoxText">Life of LiNE</p>
+    <header class="ko">
+      <div>
+        <!-- 라인 로고 -->
+        <h1>
+          <a href="">
+            <div
+              class="onlyPc image-warpper"
+              style="
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+                width: 43px;
+                height: 16px;
+              "
+            >
+              <img
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: center center;
+                  opacity: 1;
+                "
+                src="SON/img/icon-title-pc_1.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="onlySp image-warpper"
+              style="
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+                width: 38px;
+                height: 14px;
+              "
+            >
+              <!-- <img src="img/라인 로고.png" alt="" /> -->
+            </div>
+          </a>
+        </h1>
+        <!-- 1 nav Life on LINE 커뮤니케이션 서비스 버튼 -->
+        <ul class="headerMenu onlyPc">
+          <li><a href="">Life on LINE</a></li>
+          <li><a href="">커뮤니케이션 앱</a></li>
+          <li><a href="">서비스</a></li>
+          <li
+            class="currentLine"
+            style="left: 0px; width: 93px; transition: none"
+          ></li>
+        </ul>
+        <!-- 2 현재 언어+ 로고-->
+        <ul class="langMenuTop fonL">
+          <li class="iconLang onlyPc">
+            <div
+              class="image-warpper"
+              style="
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+              "
+            >
+              <img
+                aria-hidden="true"
+                src="SON/img/langIcon.png"
+                alt
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: center center;
+                  opacity: 0;
+                  transition-delay: 500ms;
+                "
+              />
+            </div>
+          </li>
+          <li class="iconLang onlySp"></li>
+          <li class="currentLang"></li>
+        </ul>
+        <!--3 언어 선택하는 박스 있는 곳 -->
+        <ul class="fonL langMenu show">
+          <li class="otherLang">
+            <a href="">EN</a>
+          </li>
+          <li class="otherLang">
+            <a href="">JP</a>
+          </li>
+          <li class="current otherLang">
+            <a href="">KR</a>
+          </li>
+          <li class="otherLang">
+            <a href="">TW</a>
+          </li>
+          <li class="otherLang">
+            <a href="">TH</a>
+          </li>
+          <li class="otherLang">
+            <a href="">ID</a>
+          </li>
+        </ul>
       </div>
-      <div id ="loadingWhiteBox" class="loadingWhiteBox"></div>
-      <div id="loadingTransparentBox" class="loadingTransparentBox"></div>
-    </section>
-    <section class="hero">
-      <picture class="heroImg">
-        <img id="heroImg1" class= "heroImg1" src="SON/img/hero1.jpg" alt="">
-      </picture>
-    </section>
-      <div id="loadingTransparentBox" class="loadingTransparentBox"></div>
-    </section>
+    </header>
+    <main>
+      <div class="mvArea">
+        <div class="mvText">
+          <div class="fontL mainTitle">Life on LINE</div>
+          <div class="mvSubText">라인은 언제나 사용자와 함께 합니다.</div>
+          <div class="mvDownload"></div>
+        </div>
+        <img src="SON/img/hero1.jpg" alt="" />
+      </div>
+    </main>
     <!--섹션 2(LEE)-->
     <section id="mainService">
-      <div class="grid"></div>
-      <div class="service_Cnt">
+      <div class="grid">
+        <span class="dot bottom"></span>
+      </div>
+      <div class="service_Cnt news">
         <div class="service">
           <div class="text_area">
             <picture class="linkIcon"
@@ -59,11 +169,53 @@
             </div>
           </div>
           <div class="image_area">
-            <picture><img src="LEE/line_img.png" alt="" /></picture>
+            <picture
+              ><img class="first_img" src="LEE/line_img.png" alt=""
+            /></picture>
+          </div>
+        </div>
+      </div>
+
+      <div class="service_Cnt">
+        <div class="service">
+          <div class="image_area">
+            <picture
+              ><img class="second_img" src="LEE/line_img2.png" alt=""
+            /></picture>
+          </div>
+          <div class="text_area music">
+            <picture class="linkIcon"
+              ><img src="LEE/naver_music.png" alt=""
+            /></picture>
+            <h3>LINE MUSIC</h3>
+            <span>듣다, 보다, 노래하다.</span>
+            <div class="desc">
+              1억 곡 이상의 음악을 언제나 어디서나 편리하게 <br />
+              감상할 수 있습니다. 최신곡은 물론 뮤직비디오 <br />감상, 노래방
+              기능까지 갖추고 있어 음악을 마음껏<br />즐길 수 있습니다.
+            </div>
+            <div class="link_tree">
+              <div class="apple">
+                <a href="https://buly.kr/5JNmpup"
+                  ><i class="ri-apple-fill"></i
+                ></a>
+              </div>
+              <div class="google">
+                <a
+                  href="https://play.google.com/store/apps/details?id=jp.linecorp.linemusic.android"
+                  ><i class="ri-google-play-fill"></i
+                ></a>
+              </div>
+              <div class="site_link">
+                <i class="ri-external-link-line"></i>자세히 보기
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <div></div>
     <!--섹션 3(PARK)-->
     <main class="service">
       <div class="service__header">
@@ -74,32 +226,91 @@
       </div>
       <section class="service__category">
         <ul class="service__category-buttonwrapper">
-          <button>All Product</button>
-          <button>커뮤니케이션</button>
-          <button>엔터테인먼트</button>
-          <button>라이프 스타일</button>
-          <button>쇼핑</button>
-          <button>핀테크</button>
-          <button>비즈니스</button>
-          <button>뉴스</button>
-          <button>게임</button>
+          <button class="service__cartegory-button">All Product</button>
+          <button class="service__cartegory-button">커뮤니케이션</button>
+          <button class="service__cartegory-button">엔터테인먼트</button>
+          <button class="service__cartegory-button">라이프 스타일</button>
+          <button class="service__cartegory-button">쇼핑</button>
+          <button class="service__cartegory-button">핀테크</button>
+          <button class="service__cartegory-button">비즈니스</button>
+          <button class="service__cartegory-button">뉴스</button>
+          <button class="service__cartegory-button">게임</button>
         </ul>
-      </section>
-      <section class="service__card-wrapper">
-        <article class="service__card">
-          <img src="PARK/img/service_img.png" alt="" />
-          <div class="card__textarea">
-            <h2 class="card__textarea-title"></h2>
-            <span class="card__textarea-sub"></span>
-          </div>
-          <span class="more"><i class="ri-more-fill"></i></span>
 
-          <div class="card__linkarea">
-            <button class="card__linkarea-link"></button>
-            <button class="card__linkarea-link"></button>
-            <button class="card__linkarea-link"></button>
-          </div>
-        </article>
+        <div class="service__card-wrapper">
+          <article class="service__card">
+            <img src="PARK/img/service_img.png" alt="" />
+            <div class="card__textarea">
+              <h2 class="card__textarea-title">LINE</h2>
+              <span class="card__textarea-sub"
+                >사람, 정보, 서비스를 연결하는</span
+              >
+              <span class="card__textarea-sub">커뮤니케이션 앱</span>
+            </div>
+            <span class="card__textarea-more"
+              ><i class="ri-more-fill"></i
+            ></span>
+            <div class="card__linkarea">
+              <a class="card__linkarea-button" href="">
+                <i class="ri-apple-fill"></i> App Store
+              </a>
+              <a class="card__linkarea-button" href="">
+                <i class="ri-google-play-line"></i> Google Play
+              </a>
+              <a class="card__linkarea-button" href="">
+                <i class="ri-mac-line"></i> Desktop
+              </a>
+            </div>
+          </article>
+          <article class="service__card">
+            <img src="PARK/img/service_img.png" alt="" />
+            <div class="card__textarea">
+              <h2 class="card__textarea-title">LINE</h2>
+              <span class="card__textarea-sub"
+                >사람, 정보, 서비스를 연결하는</span
+              >
+              <span class="card__textarea-sub">커뮤니케이션 앱</span>
+            </div>
+            <span class="card__textarea-more"
+              ><i class="ri-more-fill"></i
+            ></span>
+            <div class="card__linkarea">
+              <a class="card__linkarea-button" href="">
+                <i class="ri-apple-fill"></i> App Store
+              </a>
+              <a class="card__linkarea-button" href="">
+                <i class="ri-google-play-line"></i> Google Play
+              </a>
+              <a class="card__linkarea-button" href="">
+                <i class="ri-mac-line"></i> Desktop
+              </a>
+            </div>
+          </article>
+          <article class="service__card">
+            <img src="PARK/img/service_img.png" alt="" />
+            <div class="card__textarea">
+              <h2 class="card__textarea-title">LINE</h2>
+              <span class="card__textarea-sub"
+                >사람, 정보, 서비스를 연결하는</span
+              >
+              <span class="card__textarea-sub">커뮤니케이션 앱</span>
+            </div>
+            <span class="card__textarea-more"
+              ><i class="ri-more-fill"></i
+            ></span>
+            <div class="card__linkarea">
+              <a class="card__linkarea-button" href="">
+                <i class="ri-apple-fill"></i> App Store
+              </a>
+              <a class="card__linkarea-button" href="">
+                <i class="ri-google-play-line"></i> Google Play
+              </a>
+              <a class="card__linkarea-button" href="">
+                <i class="ri-mac-line"></i> Desktop
+              </a>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
   </body>
