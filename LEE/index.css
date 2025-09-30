@@ -2,45 +2,119 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   margin: 0;
+}
+
+#mainService {
+  width: 100%;
+  max-width: 1200px;
+  height: 1433px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 중간 점선 */
+#mainService .grid {
+  position: absolute;
+  height: 1433px;
+  top: 0px;
+  left: 50%;
+  width: 1px;
+  background-size: 1px 5px;
+  background-repeat: repeat-y;
+  background-image: linear-gradient(
+    180deg,
+    #b2b2b2,
+    #b2b2b2 2px,
+    transparent 0px,
+    transparent 5px
+  );
+}
+/* 점선 위 동그라미 */
+#mainService .grid::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(30, 30, 30, 0.3);
+
+  box-sizing: border-box;
+  background-color: #fff;
+  left: -4px;
+}
+
+/* 그리드 중간 동그라미 */
+#mainService .grid::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(30, 30, 30, 0.3);
+  background-color: #fff;
+  left: -4px;
+  top: 50%;
+}
+
+#mainService .grid .dot.bottom {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(30, 30, 30, 0.3);
+  background-color: #fff;
+  box-sizing: border-box;
+  left: -4px;
+  bottom: 0; /* 그리드 끝 */
+}
+
+/* 링크 아이콘 이미지 */
+.linkIcon img {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #eee;
+  border-radius: 16px;
+}
+/* 텍스트 아레아, 이미지 아레아 전체 */
+.service_Cnt {
+  width: 100%;
+  height: 679px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 85px 0px;
 }
 
 .service {
   display: flex;
   width: 100%;
-  max-width: 1200px;
-  height: 679px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.line_news {
-  width: 100%;
-  height: 100%;
-  padding: 85px 0px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 509px;
 }
 
 .text_area {
   line-height: 1.7;
+  padding: 0px 0px 0px 40px;
+  z-index: 1;
 }
 
 h3 {
   font-size: 40px;
   color: #1e1e1e;
   margin: 0 0 20px;
+  font-weight: 700;
 }
 
 span {
   font-size: 18px;
   color: #07b53b;
   margin: 0 0 20px;
+  font-weight: 500;
 }
 
 .desc {
@@ -48,6 +122,43 @@ span {
   font-size: 18px;
   color: #777777;
   margin: 0 0 60px;
+}
+
+.link_tree {
+  display: flex;
+}
+
+.link_tree .apple,
+.google {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  margin: 0px 4px 0px 0px;
+}
+
+.link_tree .apple:hover {
+  border: 4px solid #07b53b;
+  background-color: #07b53b;
+
+  color: #fff;
+}
+
+.link_tree .google:hover {
+  border: 4px solid #07b53b;
+  background-color: #07b53b;
+
+  color: #fff;
+}
+
+.link_tree i {
+  font-size: 25px;
 }
 
 .site_link {
@@ -61,4 +172,90 @@ span {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+
+  font-size: 14px;
+}
+
+.site_link i {
+  font-size: 25px;
+  font-weight: 50;
+}
+
+.site_link:hover {
+  border: 4px solid #07b53b;
+  background-color: #07b53b;
+
+  color: #fff;
+}
+
+.image_area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image_area .first_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 2;
+  margin-left: 3px;
+}
+
+.image_area .second_img {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 2;
+}
+
+.music {
+  line-height: 1.7;
+  padding: 0px 40px 0px 0px;
+  z-index: 1;
+}
+
+.music {
+  position: relative;
+  height: 400px;
+}
+
+.music .grid {
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 50%;
+  width: 1px;
+  background-size: 1px 5px;
+  background-repeat: repeat-y;
+  background-image: linear-gradient(
+    180deg,
+    #b2b2b2,
+    #b2b2b2 2px,
+    transparent 0px,
+    transparent 5px
+  );
+}
+
+/* 점선 위 동그라미 */
+.music .grid::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(30, 30, 30, 0.3);
+
+  box-sizing: border-box;
+  background-color: #fff;
+  left: -4px;
 }
