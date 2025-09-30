@@ -76,3 +76,15 @@
 .SlangMenu li:hover {
   background-color: #eee;
 }
+.ScurrentLine {
+  position: absolute;
+  bottom: 20px;
+  height: 4px;
+  background-color: black;
+  padding: 0px;
+  transition: all 0.3s ease;
+}
+.SdownloadBtn:hover {
+  background-color: green;
+  cursor: pointer;
+}
