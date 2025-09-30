@@ -1,53 +1,76 @@
-body {
-  overflow-x: hidden;
-}
-.loading {
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-  position: relative;
+.Sko {
   position: fixed;
-  z-index:9999;
+  width: 100%;
+  height: 75px;
+  opacity: 0.95;
+  background: #fff;
+  z-index: 99999;
 }
-.loadingGreenBox {
-  width: 35%;
-  height: 15%;
-  background-color: #07b53b;
+.Sko > div {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.Sko > div > h1 {
   position: absolute;
-  top: 35%;
-  left: 33%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
+  top: 30px;
+  left: 30px;
 }
-.loadingWhiteBox{
-  background-color: white;
-    width: 35%;
-  height: 15%;
-    position: absolute;
-  top: 35%;
-  left: 33%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
+.SheaderMenu {
+  position: relative;
+  text-align: center;
+  line-height: 4.5;
+  width: 520px;
+  height: 100%;
+  margin: 0 auto;
+  white-space: nowrap;
+  font-weight: 700;
 }
-/* .loadingTransparentBox{
-    background-image: url("img/hero1.jpg");
-    width: 25%;
-  height: 15%;
-    position: absolute;
-  top: 35%;
-  left: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index:4;
-} */
-.loadingGreenBoxText {
-  font-size: 50px;
-  font-weight: 500;
-  color: white;
-  margin-right: 5%;
+.SheaderMenu > li {
+  display: inline-block;
+  margin-right: 80px;
+  line-height: 1.23;
+  padding-bottom: 4px;
+}
+.SlangMenuTop {
+  display: block;
+  width: 55px;
+  top: 26px;
+  right: 30px;
+  text-align: center;
+  color: rgb(30, 30, 30);
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+.ScurrentLang {
+  font-size: 14px;
+}
+.SlangMenu {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  width: 100px;
+  right: 5px;
+  top: 70px;
+}
+
+.SlangMenu.show {
+  display: block;
+}
+
+.SlangMenu li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.SlangMenu li:hover {
+  background-color: #eee;
 }
