@@ -83,5 +83,4 @@ const nextSlide = () => {
   current = (current + 1) % 2;
   images[current].classList.add("active");
 };
-
 setInterval(nextSlide, 5000);
