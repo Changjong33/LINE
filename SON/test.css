@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("/fonts/eot/LINESeedKR-Bd.eot");
+  src: url("/fonts/eot/LINESeedKR-Bd.woff") format("woff");
+  src: url("/fonts/eot/LINESeedKR-Bd.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "LINESeedKR-Rg";
+  src: url("/fonts/eot/LINESeedKR-Rg.eot");
+  src: url("/fonts/eot/LINESeedKR-Rg.woff") format("woff");
+  src: url("/fonts/eot/LINESeedKR-Rg.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "LINESeedKR-Th";
+  src: url("/fonts/eot/LINESeedKR-Th.eot");
+  src: url("/fonts/eot/LINESeedKR-Th.woff") format("woff");
+  src: url("/fonts/eot/LINESeedKR-Th.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes fillAnimation {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition-timing-function: ease-in-out;
+  }
+  35% {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition-timing-function: ease-out;
+  }
+  65% {
+    transform: scaleX(1);
+    transform-origin: right;
+    transition-timing-function: ease-in;
+  }
+  70% {
+    transform: scaleX(0.95);
+    transform-origin: right;
+    transition-timing-function: ease-in-out;
+  }
+  85% {
+    transform: scaleX(1);
+    transform-origin: right;
+    transition-timing-function: ease-out;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition-timing-function: ease-in;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform-origin: center;
+  }
+  50% {
+    opacity: 0.8;
+    transform-origin: center;
+  }
+  100% {
+    opacity: 1;
+    transform-origin: center;
+  }
+}
+
+@keyframes textFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes irisWipe {
+  0%,
+  20% {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: center;
+  }
+  40%,
+  60%,
+  80% {
+    opacity: 1;
+    transform: scale(1.2);
+    transform-origin: center;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: center;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+  }
+}
+
+.section-container {
+  position: relative;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.animated-bar {
+  position: absolute;
+  top: calc(50% - 80px);
+  left: calc(50% - 360px);
+  width: 720px;
+  height: 160px;
+  background-color: #07b53b;
+  animation: fillAnimation 2s ease-in-out forwards;
+  z-index: 4;
+}
+
+.animated-bar-text {
+  position: absolute;
+  top: calc(50% + 30px);
+  left: calc(50% + 140px);
+  font-family: "LINESeedKR-Bd";
+  font-weight: 900;
+  font-size: 2rem;
+  color: #fff;
+  z-index: 4;
+  animation: textFadeOut 0.1s 1.75s ease-out forwards;
+}
+
+.background-image {
+  position: absolute;
+  top: calc(50% - 80px);
+  left: calc(50% - 360px);
+  width: 720px;
+  height: 160px;
+  background-image: url("https://www.line.me/static/img/mv02_w1000.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  opacity: 0;
+  transform-origin: left;
+  animation: fadeIn 0s 1.8s ease-in-out forwards,
+    irisWipe 1s 1.8s ease-out forwards;
+}

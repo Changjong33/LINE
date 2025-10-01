@@ -67,7 +67,7 @@
   height: 100vh;
   overflow: hidden;
 }
-
+/* 히어로 바뀌는 내용 */
 .SmvImages > img {
   position: absolute;
   top: 0;
@@ -78,9 +78,9 @@
   object-position: center;
   opacity: 0;
   transform: scale(1);
-  transition: opacity 1s ease, transform 8s ease;
+  transition: opacity 1s ease, transform 10s ease;
 }
-.SmvImages>img.active {
+.SmvImages > img.active {
   opacity: 1;
   transform: scale(1.2);
 }
