@@ -149,5 +149,6 @@
   opacity: 0;
   transform-origin: left;
   animation: fadeIn 0s 1.8s ease-in-out forwards,
-    irisWipe 1s 1.8s ease-out forwards;
+    irisWipe 1s 1.8s ease-out forwards
 }
+
