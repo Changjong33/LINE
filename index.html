@@ -24,6 +24,8 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <!--로딩 화면(SON)-->
@@ -53,7 +55,7 @@
                   object-position: center center;
                   opacity: 1;
                 "
-                src="SON/img/icon-title-pc_1.png"
+                src="img/icon-title-pc_1.png"
                 alt=""
               />
             </div>
@@ -73,14 +75,12 @@
         </h1>
         <!-- 1 nav Life on LINE 커뮤니케이션 서비스 버튼 -->
         <ul class="SheaderMenu onlyPc">
-          <li id="SclickFirstBtn">
-            <a href="">Life on LINE</a>
-          </li>
-          <li id="SclickSecondBtn"><a href="">커뮤니케이션 앱</a></li>
-          <li id="SclickThirdBtn"><a href="">서비스</a></li>
+          <li><a href="">Life on LINE</a></li>
+          <li><a href="">커뮤니케이션 앱</a></li>
+          <li><a href="">서비스</a></li>
           <li
             class="ScurrentLine"
-            style="left: 0px; width: 93px; transition: 0.2s ease-in-out"
+            style="left: 0px; width: 93px; transition: none"
           ></li>
         </ul>
         <!-- 2 현재 언어+ 로고-->
@@ -98,7 +98,7 @@
             >
               <img
                 aria-hidden="true"
-                src="SON/img/langIcon.png"
+                src="img/langIcon.png"
                 alt
                 style="
                   position: absolute;
@@ -147,17 +147,18 @@
           <div class="SmvSubText">라인은 언제나 사용자와 함께 합니다.</div>
           <div class="SmvDownload">
             <div class="SiconText">
-              <img src="SON/img/라인 말풍선.png" alt="" />
+              <img src="img/라인 말풍선.png" alt="" />
               <p>다운로드</p>
             </div>
             <div class="SdownloadBtnList">
               <div class="SdownloadBtn"><i class="ri-apple-fill"></i></div>
-              <div class="SdownloadBtn"><i class="ri-google-play-fill"></i></div>
+              <div class="SdownloadBtn">
+                <i class="ri-google-play-fill"></i>
+              </div>
               <div class="SdownloadBtn"><i class="ri-tv-2-line"></i></div>
             </div>
           </div>
         </div>
-        <img src="SON/img/hero1.jpg" alt="" />
       </div>
     </main>
     <!--섹션 2(LEE)-->
