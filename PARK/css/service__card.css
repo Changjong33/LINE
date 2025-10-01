@@ -1,7 +1,7 @@
 .Pservice__category {
   width: 100%;
   max-width: 1200px;
-
+  margin-left: 310px;
   display: flex;
   justify-content: flex-end;
 }
