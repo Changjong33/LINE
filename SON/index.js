@@ -14,7 +14,9 @@ langItems.forEach((item) => {
   });
 });
 // 헤더 클릭시 아래 라인 따라오는 것 이해 다 못했음 이해해야함...
-const menuItems = document.querySelectorAll(".SheaderMenu > li:not(.ScurrentLine)");
+const menuItems = document.querySelectorAll(
+  ".SheaderMenu > li:not(.ScurrentLine)"
+);
 const indicator = document.querySelector(".ScurrentLine");
 
 menuItems.forEach((item) => {
@@ -73,11 +75,14 @@ clickList("SclickSecondBtn", "SmvTarget2");
 clickList("SclickThirdBtn", "SmvTarget3");
 
 // 배경이 자동으로 바뀌게 하는 것 이해 완료 설명 가능
-const images = document.querySelectorAll(".SmvImages>img");
-let current = 0;
-const nextSlide = () => {
-  images[current].classList.remove("active");
-  current = (current + 1) % 2;
-  images[current].classList.add("active");
-};
-setInterval(nextSlide, 5000);
+// const section = document.querySelector(".background-image");
+// const images = [
+//   "https://www.line.me/static/img/mv01_w1000.jpg",
+//   "https://www.line.me/static/img/mv02_w1000.jpg",
+// ];
+// let current = 0;
+
+// setInterval(() => {
+//   current = (current + 1) % 2;
+//   section.style.backgroundImage = `url(${images[current]})`;
+// }, 5000);
