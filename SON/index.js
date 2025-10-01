@@ -38,7 +38,6 @@ menuItems.forEach((item) => {
   });
 });
 
-
 // 요건 버튼 호버했을 때 안에 아이콘 바뀌는 애니메이션
 const buttons = document.querySelectorAll(".SdownloadBtn");
 
@@ -66,15 +65,23 @@ buttons.forEach((btn) => {
 //   document.querySelector("#SmvTarget3").scrollIntoView()
 // })
 //v 줄여봤는데 코드 길이가 별 차이 없음.. 버튼이 많아지면 줄어들 것 같긴함
-const clickList=(btn,target)=>{
-  document.querySelector(`#${btn}`).addEventListener("click",()=>{
-  document.querySelector(`#${target}`).scrollIntoView()
-})
-}
-clickList("SclickFirstBtn","SmvTarget1")
-clickList("SclickSecondBtn","SmvTarget2")
-clickList("SclickThirdBtn","SmvTarget3")
 
+const clickList = (btn, target) => {
+  document.querySelector(`#${btn}`).addEventListener("click", () => {
+    document.querySelector(`#${target}`).scrollIntoView({ behavior: "smooth" });
+  });
+};
+clickList("SclickFirstBtn", "SmvTarget1");
+clickList("SclickSecondBtn", "SmvTarget2");
+clickList("SclickThirdBtn", "SmvTarget3");
 
-//
+// 배경이 자동으로 바뀌게 하는 것 이해 완료 설명 가능
+const images = document.querySelectorAll(".SmvImages>img");
+let current = 0;
+const nextSlide = () => {
+  images[current].classList.remove("active");
+  current = (current + 1) % 2;
+  images[current].classList.add("active");
+};
 
+setInterval(nextSlide, 5000);

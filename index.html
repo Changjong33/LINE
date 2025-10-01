@@ -34,16 +34,7 @@
         <!-- 라인 로고 -->
         <h1 class="Sko-bbox">
           <a href="">
-            <div
-              class="image-wrapper"
-              style="
-                position: relative;
-                overflow: hidden;
-                display: inline-block;
-                width: 43px;
-                height: 16px;
-              "
-            >
+            <div class="image-wrapper">
               <img
                 style="
                   position: absolute;
@@ -63,45 +54,16 @@
         </h1>
         <!-- 1 nav Life on LINE 커뮤니케이션 서비스 버튼 -->
         <ul class="SheaderMenu onlyPc">
-          <li id="SclickFirstBtn">
-            <a href="">Life on LINE</a>
-          </li>
+          <li id="SclickFirstBtn"><a href="">Life on LINE</a></li>
           <li id="SclickSecondBtn"><a href="">커뮤니케이션 앱</a></li>
           <li id="SclickThirdBtn"><a href="">서비스</a></li>
-          <li
-            class="ScurrentLine"
-            style="left: 0px; width: 93px; transition: 0.2s ease-in-out"
-          ></li>
+          <li class="ScurrentLine"></li>
         </ul>
         <!-- 2 현재 언어+ 로고-->
         <ul class="SlangMenuTop fonL">
           <li class="iconLang onlyPc">
-            <div
-              class="Simage-warpper"
-              style="
-                position: relative;
-                overflow: hidden;
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-              "
-            >
-              <img
-                aria-hidden="true"
-                src="img/langIcon.png"
-                alt
-                style="
-                  position: absolute;
-                  top: 0px;
-                  left: 0px;
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  object-position: center center;
-                  opacity: 1;
-                  transition-delay: 500ms;
-                "
-              />
+            <div class="Simage-wrapper">
+              <img src="SON/img/langIcon.png" alt="" />
             </div>
           </li>
           <li class="SiconLang onlySp"></li>
@@ -131,7 +93,7 @@
       </div>
     </header>
     <main>
-      <div class="SmvArea">
+      <div id="SmvTarget1" class="SmvArea">
         <div class="SmvText">
           <div class="SmainTitle">Life on LINE</div>
           <div class="SmvSubText">라인은 언제나 사용자와 함께 합니다.</div>
@@ -149,7 +111,10 @@
             </div>
           </div>
         </div>
-        <img src="img/hero1.jpg" alt="" />
+        <div class="SmvImages">
+          <img src="SON/img/hero1.jpg" class="active" alt="" />
+          <img src="SON/img/hero2.jpg" alt="" />
+        </div>
       </div>
     </main>
     <!--섹션 2(LEE)-->
@@ -222,7 +187,7 @@
     </section>
     <section id="Lcommunication">
       <div class="Lmain_sub">
-        <h2 class="Lmain_title">커뮤니케이션 앱</h2>
+        <h2 id="SmvTarget2" class="Lmain_title">커뮤니케이션 앱</h2>
         <p class="Lsub_text">
           언제 어디서나 무료로 메세지를 보내고, 깨끗한 음질로 24시간 자유롭게
           무료 통화가<br />가능한 새로운 커뮤니케이션 앱입니다.
@@ -286,7 +251,7 @@
     <!--섹션 3(PARK)-->
     <main class="Pservice">
       <div class="Pservice__header">
-        <h1 class="Pservice__header-title">서비스</h1>
+        <h1 id="SmvTarget3" class="Pservice__header-title">서비스</h1>
         <span class="Pservice__header-sub"
           >일부 서비스는 특정 국가에서만 사용 가능합니다.</span
         >
