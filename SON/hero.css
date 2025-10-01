@@ -14,6 +14,7 @@
   position: absolute;
   top: 35%;
   left: 10%;
+  z-index: 3;
 }
 .SmainTitle {
   font-size: 140px;
@@ -58,4 +59,28 @@
 }
 .SiconText > img {
   object-fit: contain;
+}
+
+.SmvImages {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.SmvImages > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 1s ease, transform 8s ease;
+}
+.SmvImages>img.active {
+  opacity: 1;
+  transform: scale(1.2);
 }
