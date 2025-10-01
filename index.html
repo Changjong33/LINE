@@ -32,10 +32,10 @@
     <header class="Sko">
       <div class="Sko-box">
         <!-- 라인 로고 -->
-        <h1>
+        <h1 class="Sko-bbox">
           <a href="">
             <div
-              class="onlyPc image-wrapper"
+              class="image-wrapper"
               style="
                 position: relative;
                 overflow: hidden;
@@ -161,7 +161,7 @@
         <div class="Lservice">
           <div class="Ltext_area">
             <picture class="LlinkIcon"
-              ><img src="LEE/image/line_news_img.png" alt=""
+              ><img src="img/line_news_img.png" alt=""
             /></picture>
             <h3>LINE NEWS</h3>
             <span>지금 화제가 되고 있는 <br />글로벌 뉴스</span>
@@ -176,7 +176,7 @@
           </div>
           <div class="Limage_area">
             <picture
-              ><img class="Lfirst_img" src="LEE/image/line_img.png" alt=""
+              ><img class="Lfirst_img" src="img/line_img.png" alt=""
             /></picture>
           </div>
         </div>
@@ -186,12 +186,12 @@
         <div class="Lservice">
           <div class="Limage_area">
             <picture
-              ><img class="Lsecond_img" src="LEE/image/line_img2.png" alt=""
+              ><img class="Lsecond_img" src="img/line_img2.png" alt=""
             /></picture>
           </div>
           <div class="Ltext_area music">
             <picture class="LlinkIcon"
-              ><img src="LEE/image/naver_music.png" alt=""
+              ><img src="img/naver_music.png" alt=""
             /></picture>
             <h3>LINE MUSIC</h3>
             <span>듣다, 보다, 노래하다.</span>
@@ -229,7 +229,7 @@
         </p>
         <ul class="LcontentsList">
           <li class="Lcontent box">
-            <img src="LEE/image/content1.png" alt="" />
+            <img src="img/content1.png" alt="" />
             <h3 class="LonlyPc">대화, 음성통화, 영상통화</h3>
             <div>
               라인 유저라면 1:1은 물론 그룹을 만들어서 대화,<br />음성통화,
@@ -237,7 +237,7 @@
             </div>
           </li>
           <li class="Lcontent box">
-            <img src="LEE/image/content2.png" alt="" />
+            <img src="img/content2.png" alt="" />
             <h3 class="LonlyPc">스티커, 이모티콘, 테마</h3>
             <div>
               대화방에서 마음을 전할 수 있는 다양한 스티커와<br />이모티콘,
@@ -246,12 +246,12 @@
             </div>
           </li>
           <li class="Lcontent solo">
-            <img src="LEE/image/content3.png" alt="" />
+            <img src="img/content3.png" alt="" />
             <h3 class="LonlyPc">오픈챗</h3>
             <div>일상이나 관심사를 공유하고 정보를 나눌 수 있습니다.</div>
           </li>
           <li class="Lcontent box">
-            <img src="LEE/image/content4.png" alt="" />
+            <img src="img/content4.png" alt="" />
             <h3 class="LonlyPc">홈 탭</h3>
             <div>
               라인의 각종 서비스 및 스티커와 같은 다양한 정보와<br />콘텐츠를
@@ -259,7 +259,7 @@
             </div>
           </li>
           <li class="Lcontent box">
-            <img src="LEE/image/content5.png" alt="" />
+            <img src="img/content5.png" alt="" />
             <h3 class="LonlyPc">LINE VOOM</h3>
             <div>
               LINE VOOM에서 취향에 맞는 계정을 팔로우하고,<br />멋진 동영상,
@@ -267,7 +267,7 @@
             </div>
           </li>
           <li class="Lcontent">
-            <img src="LEE/image/content6.png" alt="" />
+            <img src="img/content6.png" alt="" />
             <h3 class="LonlyPc">월렛 탭</h3>
             <div>
               송금이나 결제 등 ‘라인 페이’ 서비스 외에도 다양한<br />금융
@@ -280,10 +280,9 @@
     <section class="LsingleBanner">
       <div class="LCorporate_support">
         <div class="LbannerTxt">기업 지원</div>
-        <img src="LEE/image/Corporate support.png" alt="" />
+        <img src="img/Corporate support.png" alt="" />
       </div>
     </section>
-    <div></div>
     <!--섹션 3(PARK)-->
     <main class="Pservice">
       <div class="Pservice__header">
@@ -294,19 +293,25 @@
       </div>
       <section class="Pservice__category">
         <ul class="Pservice__category-buttonwrapper">
-          <button class="Pservice__cartegory-button">All Product</button>
-          <button class="Pservice__cartegory-button">커뮤니케이션</button>
-          <button class="Pservice__cartegory-button">엔터테인먼트</button>
-          <button class="Pservice__cartegory-button">라이프 스타일</button>
-          <button class="Pservice__cartegory-button">쇼핑</button>
-          <button class="Pservice__cartegory-button">핀테크</button>
-          <button class="Pservice__cartegory-button">비즈니스</button>
-          <button class="Pservice__cartegory-button">뉴스</button>
-          <button class="Pservice__cartegory-button">게임</button>
+          <button class="Pservice__cartegory-button Pall">All Product</button>
+          <button id="comu" class="Pservice__cartegory-button">
+            커뮤니케이션
+          </button>
+          <button id="enter" class="Pservice__cartegory-button">
+            엔터테인먼트
+          </button>
+          <button id="life" class="Pservice__cartegory-button">
+            라이프 스타일
+          </button>
+          <button id="shop" class="Pservice__cartegory-button">쇼핑</button>
+          <button id="tech" class="Pservice__cartegory-button">핀테크</button>
+          <button id="busi" class="Pservice__cartegory-button">비즈니스</button>
+          <button id="news" class="Pservice__cartegory-button">뉴스</button>
+          <button id="game" class="Pservice__cartegory-button">게임</button>
         </ul>
 
         <div class="Pservice__card-wrapper">
-          <article class="Pservice__card">
+          <article class="Pservice__card comu">
             <img src="img/service_img.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">LINE</h2>
@@ -335,7 +340,7 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+          <article class="Pservice__card comu">
             <img src="img/service_img2.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">오픈챗</h2>
@@ -355,7 +360,7 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+          <article class="Pservice__card enter">
             <img src="img/service_img3.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 망가</h2>
@@ -383,7 +388,7 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+          <article class="Pservice__card enter">
             <img src="img/service_img4.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 뮤직</h2>
@@ -412,7 +417,7 @@
             </div>
           </article>
 
-          <article class="Pservice__card">
+          <article class="Pservice__card enter">
             <img src="img/service_img5.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 운세</h2>
@@ -440,7 +445,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card enter">
             <img src="img/service_img6.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 레코즈</h2>
@@ -461,7 +467,7 @@
             </div>
           </article>
 
-          <article class="Pservice__card">
+          <article class="Pservice__card enter">
             <img src="img/service_img7.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">Charmmy</h2>
@@ -481,7 +487,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card life">
             <img src="img/service_img8.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 포인트 클럽</h2>
@@ -501,7 +508,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card life">
             <img src="img/service_img9.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 아르바이트</h2>
@@ -522,7 +530,7 @@
             </div>
           </article>
 
-          <article class="Pservice__card">
+          <article class="Pservice__card shop">
             <img src="img/service_img10.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인프렌즈 스토어</h2>
@@ -542,7 +550,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card shop">
             <img src="img/service_img11.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 플라이어</h2>
@@ -562,7 +571,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card shop">
             <img src="img/service_img12.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 기프트</h2>
@@ -583,7 +593,7 @@
             </div>
           </article>
 
-          <article class="Pservice__card">
+          <article class="Pservice__card tech">
             <img src="img/service_img13.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 증권</h2>
@@ -603,7 +613,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card tech">
             <img src="img/service_img14.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 포켓 머니</h2>
@@ -623,7 +634,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card tech">
             <img src="img/service_img15.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 FX</h2>
@@ -643,7 +655,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card tech">
             <img src="img/service_img16.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">LINE BITMAX</h2>
@@ -662,7 +675,7 @@
             </div>
           </article>
 
-          <article class="Pservice__card">
+          <article class="Pservice__card busi">
             <img src="img/service_img17.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 광고</h2>
@@ -682,7 +695,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card busi">
             <img src="img/service_img18.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 광고 네트워크</h2>
@@ -703,7 +717,7 @@
             </div>
           </article>
 
-          <article class="Pservice__card">
+          <article class="Pservice__card busi">
             <img src="img/service_img19.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">Talk Head View</h2>
@@ -724,7 +738,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card busi">
             <img src="img/service_img20.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 세일즈 프로모션</h2>
@@ -744,7 +759,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card busi">
             <img src="img/service_img21.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 공식 계정</h2>
@@ -767,7 +783,7 @@
             </div>
           </article>
 
-          <article class="Pservice__card">
+          <article class="Pservice__card busi">
             <img src="img/service_img22.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 포인트 AD</h2>
@@ -787,7 +803,7 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+          <article class="Pservice__card busi">
             <img src="img/service_img23.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 프로모션 스티커</h2>
@@ -812,7 +828,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card busi">
             <img src="img/service_img24.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 미니 앱</h2>
@@ -830,7 +847,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card busi">
             <img src="img/service_img25.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 리서치</h2>
@@ -850,7 +868,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card news">
             <img src="img/service_img26.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 뉴스</h2>
@@ -871,7 +890,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card game">
             <img src="img/service_img27.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 셰프</h2>
@@ -894,7 +914,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card game">
             <img src="img/service_img28.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 버블 2</h2>
@@ -920,7 +941,7 @@
             </div>
           </article>
 
-          <article class="Pservice__card">
+          <article class="Pservice__card game">
             <img src="img/service_img29.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 포코포코</h2>
@@ -945,7 +966,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card game">
             <img src="img/service_img30.jpeg" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 레인저스</h2>
@@ -972,7 +994,7 @@
             </div>
           </article>
 
-          <article class="Pservice__card">
+          <article class="Pservice__card game">
             <img src="img/service_img31.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 디즈니 썸썸</h2>
@@ -997,7 +1019,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card game">
             <img src="img/service_img32.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">LINE 포코팡 타운</h2>
@@ -1025,7 +1048,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card game">
             <img src="img/service_img33.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인팝2</h2>
@@ -1054,7 +1078,7 @@
             </div>
           </article>
 
-          <article class="Pservice__card">
+          <article class="Pservice__card game">
             <img src="img/service_img34.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 퍼즐탄탄</h2>
@@ -1077,7 +1101,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card game">
             <img src="img/service_img35.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 버블</h2>
@@ -1102,7 +1127,8 @@
               </div>
             </div>
           </article>
-          <article class="Pservice__card">
+
+          <article class="Pservice__card game">
             <img src="img/service_img36.png" alt="" />
             <div class="Pcard__textarea">
               <h2 class="Pcard__textarea-title">라인 브라운팜</h2>
@@ -1135,7 +1161,7 @@
     <footer class="Lko">
       <div class="LdownloadLinks">
         <ul>
-          <li><img src="img/icon-line_1.png" alt="" /></li>
+          <li><img src="image/icon-line_1.png" alt="" /></li>
           <li>
             <a
               href="https://apps.apple.com/kr/app/%EB%9D%BC%EC%9D%B8-line/id443904275"
@@ -1201,5 +1227,6 @@
         </ul>
       </div>
     </footer>
+    <div></div>
   </body>
 </html>
