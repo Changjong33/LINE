@@ -10,7 +10,7 @@
 
 .Pservice__category-buttonwrapper {
   width: 300px;
-  height: 100vh;
+  height: 100%;
   gap: 15px;
 
   position: sticky;
