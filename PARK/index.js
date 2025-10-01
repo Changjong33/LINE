@@ -44,6 +44,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// category fixed sidebar observer
+const sidebar = document.querySelector(".Pservice__category-buttonwrapper");
+const sidebarKeyframes = { position: fixed };
+const sidebarOptions = {};
+const sidebarObserver = new IntersectionObserver((targets, me) => {
+  targets.forEach((v, i) => {
+    if (target.isIntersecting) v.target.animate();
+  });
+});
+
 //   document.addEventListener("DOMContentLoaded", () => {
 //   const buttons = document.querySelectorAll(".Pservice__cartegory-button");
 //   const cards = document.querySelectorAll(".Pservice__card");
