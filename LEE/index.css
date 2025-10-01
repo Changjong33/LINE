@@ -158,6 +158,9 @@ span {
   object-fit: cover;
   object-position: center;
   z-index: 2;
+
+  position: relative;
+  left: 3px;
 }
 
 .Limage_area .Lsecond_img {
@@ -169,6 +172,9 @@ span {
   object-fit: cover;
   object-position: center;
   z-index: 2;
+
+  position: relative;
+  right: 3px;
 }
 
 .Lmusic {
