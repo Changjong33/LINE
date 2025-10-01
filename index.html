@@ -34,7 +34,16 @@
         <!-- 라인 로고 -->
         <h1 class="Sko-bbox">
           <a href="">
-            <div class="image-wrapper">
+            <div
+              class="image-wrapper"
+              style="
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+                width: 43px;
+                height: 16px;
+              "
+            >
               <img
                 style="
                   position: absolute;
@@ -54,16 +63,45 @@
         </h1>
         <!-- 1 nav Life on LINE 커뮤니케이션 서비스 버튼 -->
         <ul class="SheaderMenu onlyPc">
-          <li id="SclickFirstBtn"><a href="">Life on LINE</a></li>
+          <li id="SclickFirstBtn">
+            <a href="">Life on LINE</a>
+          </li>
           <li id="SclickSecondBtn"><a href="">커뮤니케이션 앱</a></li>
           <li id="SclickThirdBtn"><a href="">서비스</a></li>
-          <li class="ScurrentLine"></li>
+          <li
+            class="ScurrentLine"
+            style="left: 0px; width: 93px; transition: 0.2s ease-in-out"
+          ></li>
         </ul>
         <!-- 2 현재 언어+ 로고-->
         <ul class="SlangMenuTop fonL">
           <li class="iconLang onlyPc">
-            <div class="Simage-wrapper">
-              <img src="SON/img/langIcon.png" alt="" />
+            <div
+              class="Simage-warpper"
+              style="
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+              "
+            >
+              <img
+                aria-hidden="true"
+                src="img/langIcon.png"
+                alt
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: center center;
+                  opacity: 1;
+                  transition-delay: 500ms;
+                "
+              />
             </div>
           </li>
           <li class="SiconLang onlySp"></li>
@@ -93,7 +131,7 @@
       </div>
     </header>
     <main>
-      <div id="SmvTarget1" class="SmvArea">
+      <div class="SmvArea">
         <div class="SmvText">
           <div class="SmainTitle">Life on LINE</div>
           <div class="SmvSubText">라인은 언제나 사용자와 함께 합니다.</div>
@@ -111,19 +149,16 @@
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-        
-        <img id="heroimg" src="img/hero1.jpg" alt="" />
-        
-=======
-        <div class="SmvImages">
-          <img src="SON/img/hero1.jpg" class="active" alt="" />
-          <img src="SON/img/hero2.jpg" alt="" />
-        </div>
->>>>>>> 7d6e2cbab9d341790ce5d496f885c27d7ef67e2e
+        <img src="img/hero1.jpg" alt="" />
       </div>
     </main>
     <!--섹션 2(LEE)-->
+    <section class="Lmain_screen">
+      <div class="LscrollNavWrap">
+        <span class="LscrollNav">Scroll</span>
+        <div class="LscrollLine"></div>
+      </div>
+    </section>
     <section id="LmainService">
       <div class="Lgrid">
         <span class="Ldot bottom">・</span>
@@ -132,22 +167,24 @@
         <div class="Lservice">
           <div class="Ltext_area">
             <picture class="LlinkIcon"
-              ><img src="img/line_news_img.png" alt=""
+              ><img src="image/line_news_img.png" alt=""
             /></picture>
-            <h3>LINE NEWS</h3>
-            <span>지금 화제가 되고 있는 <br />글로벌 뉴스</span>
-            <div class="Ldesc">
-              바쁜 일과 중에도 글로벌 이슈를 알고 싶다면 라인 뉴스를 <br />
-              추천합니다. 정치, 경제부터 연예계 소식까지 모든 장르의 뉴스를
-              <br />전하는 라인 뉴스에는 '알고 싶은 정보'가 가득합니다.
-            </div>
-            <div class="Lsite_link">
-              <i class="ri-external-link-line"></i>자세히 보기
+            <div class="Ltext_box">
+              <h3>LINE NEWS</h3>
+              <span>지금 화제가 되고 있는 <br />글로벌 뉴스</span>
+              <div class="Ldesc">
+                바쁜 일과 중에도 글로벌 이슈를 알고 싶다면 라인 뉴스를 <br />
+                추천합니다. 정치, 경제부터 연예계 소식까지 모든 장르의 뉴스를
+                <br />전하는 라인 뉴스에는 '알고 싶은 정보'가 가득합니다.
+              </div>
+              <div class="Lsite_link">
+                <i class="ri-external-link-line"></i>자세히 보기
+              </div>
             </div>
           </div>
           <div class="Limage_area">
             <picture
-              ><img class="Lfirst_img" src="img/line_img.png" alt=""
+              ><img class="Lfirst_img" src="image/line_img.png" alt=""
             /></picture>
           </div>
         </div>
@@ -157,34 +194,36 @@
         <div class="Lservice">
           <div class="Limage_area">
             <picture
-              ><img class="Lsecond_img" src="img/line_img2.png" alt=""
+              ><img class="Lsecond_img" src="image/line_img2.png" alt=""
             /></picture>
           </div>
           <div class="Ltext_area music">
             <picture class="LlinkIcon"
-              ><img src="img/naver_music.png" alt=""
+              ><img src="image/naver_music.png" alt=""
             /></picture>
-            <h3>LINE MUSIC</h3>
-            <span>듣다, 보다, 노래하다.</span>
-            <div class="Ldesc">
-              1억 곡 이상의 음악을 언제나 어디서나 편리하게 <br />
-              감상할 수 있습니다. 최신곡은 물론 뮤직비디오 <br />감상, 노래방
-              기능까지 갖추고 있어 음악을 마음껏<br />즐길 수 있습니다.
-            </div>
-            <div class="Llink_tree">
-              <div class="Lapple">
-                <a href="https://buly.kr/5JNmpup"
-                  ><i class="ri-apple-fill"></i
-                ></a>
+            <div class="Ltext_box">
+              <h3>LINE MUSIC</h3>
+              <span>듣다, 보다, 노래하다.</span>
+              <div class="Ldesc">
+                1억 곡 이상의 음악을 언제나 어디서나 편리하게 <br />
+                감상할 수 있습니다. 최신곡은 물론 뮤직비디오 <br />감상, 노래방
+                기능까지 갖추고 있어 음악을 마음껏<br />즐길 수 있습니다.
               </div>
-              <div class="Lgoogle">
-                <a
-                  href="https://play.google.com/store/apps/details?id=jp.linecorp.linemusic.android"
-                  ><i class="ri-google-play-fill"></i
-                ></a>
-              </div>
-              <div class="Lsite_link">
-                <i class="ri-external-link-line"></i>자세히 보기
+              <div class="Llink_tree">
+                <div class="Lapple">
+                  <a href="https://buly.kr/5JNmpup"
+                    ><i class="ri-apple-fill"></i
+                  ></a>
+                </div>
+                <div class="Lgoogle">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=jp.linecorp.linemusic.android"
+                    ><i class="ri-google-play-fill"></i
+                  ></a>
+                </div>
+                <div class="Lsite_link">
+                  <i class="ri-external-link-line"></i>자세히 보기
+                </div>
               </div>
             </div>
           </div>
@@ -193,14 +232,14 @@
     </section>
     <section id="Lcommunication">
       <div class="Lmain_sub">
-        <h2 id="SmvTarget2" class="Lmain_title">커뮤니케이션 앱</h2>
+        <h2 class="Lmain_title">커뮤니케이션 앱</h2>
         <p class="Lsub_text">
           언제 어디서나 무료로 메세지를 보내고, 깨끗한 음질로 24시간 자유롭게
           무료 통화가<br />가능한 새로운 커뮤니케이션 앱입니다.
         </p>
         <ul class="LcontentsList">
           <li class="Lcontent box">
-            <img src="img/content1.png" alt="" />
+            <img src="image/content1.png" alt="" />
             <h3 class="LonlyPc">대화, 음성통화, 영상통화</h3>
             <div>
               라인 유저라면 1:1은 물론 그룹을 만들어서 대화,<br />음성통화,
@@ -208,7 +247,7 @@
             </div>
           </li>
           <li class="Lcontent box">
-            <img src="img/content2.png" alt="" />
+            <img src="image/content2.png" alt="" />
             <h3 class="LonlyPc">스티커, 이모티콘, 테마</h3>
             <div>
               대화방에서 마음을 전할 수 있는 다양한 스티커와<br />이모티콘,
@@ -217,12 +256,12 @@
             </div>
           </li>
           <li class="Lcontent solo">
-            <img src="img/content3.png" alt="" />
+            <img src="image/content3.png" alt="" />
             <h3 class="LonlyPc">오픈챗</h3>
             <div>일상이나 관심사를 공유하고 정보를 나눌 수 있습니다.</div>
           </li>
           <li class="Lcontent box">
-            <img src="img/content4.png" alt="" />
+            <img src="image/content4.png" alt="" />
             <h3 class="LonlyPc">홈 탭</h3>
             <div>
               라인의 각종 서비스 및 스티커와 같은 다양한 정보와<br />콘텐츠를
@@ -230,7 +269,7 @@
             </div>
           </li>
           <li class="Lcontent box">
-            <img src="img/content5.png" alt="" />
+            <img src="image/content5.png" alt="" />
             <h3 class="LonlyPc">LINE VOOM</h3>
             <div>
               LINE VOOM에서 취향에 맞는 계정을 팔로우하고,<br />멋진 동영상,
@@ -238,7 +277,7 @@
             </div>
           </li>
           <li class="Lcontent">
-            <img src="img/content6.png" alt="" />
+            <img src="image/content6.png" alt="" />
             <h3 class="LonlyPc">월렛 탭</h3>
             <div>
               송금이나 결제 등 ‘라인 페이’ 서비스 외에도 다양한<br />금융
@@ -251,36 +290,36 @@
     <section class="LsingleBanner">
       <div class="LCorporate_support">
         <div class="LbannerTxt">기업 지원</div>
-        <img src="img/Corporate support.png" alt="" />
+        <img src="image/Corporate support.png" alt="" />
       </div>
     </section>
     <!--섹션 3(PARK)-->
     <main class="Pservice">
       <div class="Pservice__header">
-        <h1 id="SmvTarget3" class="Pservice__header-title">서비스</h1>
+        <h1 class="Pservice__header-title">서비스</h1>
         <span class="Pservice__header-sub"
           >일부 서비스는 특정 국가에서만 사용 가능합니다.</span
         >
       </div>
       <section class="Pservice__category">
         <ul class="Pservice__category-buttonwrapper">
-          <button id="Pall" class="Pservice__cartegory-button">
+          <button id="Pall" class="Pservice__category-button">
             All Product
           </button>
-          <button id="comu" class="Pservice__cartegory-button">
+          <button id="comu" class="Pservice__category-button">
             커뮤니케이션
           </button>
-          <button id="enter" class="Pservice__cartegory-button">
+          <button id="enter" class="Pservice__category-button">
             엔터테인먼트
           </button>
-          <button id="life" class="Pservice__cartegory-button">
+          <button id="life" class="Pservice__category-button">
             라이프 스타일
           </button>
-          <button id="shop" class="Pservice__cartegory-button">쇼핑</button>
-          <button id="tech" class="Pservice__cartegory-button">핀테크</button>
-          <button id="busi" class="Pservice__cartegory-button">비즈니스</button>
-          <button id="news" class="Pservice__cartegory-button">뉴스</button>
-          <button id="game" class="Pservice__cartegory-button">게임</button>
+          <button id="shop" class="Pservice__category-button">쇼핑</button>
+          <button id="tech" class="Pservice__category-button">핀테크</button>
+          <button id="busi" class="Pservice__category-button">비즈니스</button>
+          <button id="news" class="Pservice__category-button">뉴스</button>
+          <button id="game" class="Pservice__category-button">게임</button>
         </ul>
 
         <div class="Pservice__card-wrapper">
@@ -1200,6 +1239,5 @@
         </ul>
       </div>
     </footer>
-    <div></div>
   </body>
 </html>
