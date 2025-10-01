@@ -74,7 +74,7 @@
   height: 100vh;
   overflow: hidden;
 }
-
+/* 히어로 바뀌는 내용 */
 .SmvImages > img {
   position: absolute;
   top: 0;

@@ -13,11 +13,8 @@ langItems.forEach((item) => {
     langMenu.classList.remove("show");
   });
 });
-const menuItems = document.querySelectorAll(
-  ".SheaderMenu > li:not(.ScurrentLine)"
-);
-
 // 헤더 클릭시 아래 라인 따라오는 것 이해 다 못했음 이해해야함...
+const menuItems = document.querySelectorAll(".SheaderMenu > li:not(.ScurrentLine)");
 const indicator = document.querySelector(".ScurrentLine");
 
 menuItems.forEach((item) => {
