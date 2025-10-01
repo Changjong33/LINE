@@ -81,7 +81,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 180px 0;
 }
 
 .LCorporate_support {
@@ -162,9 +161,6 @@
 
   .Lcontent {
     margin: 0px 60px 36px 0px;
-  }
-
-  .LcontentsList .box {
   }
 
   .LcontentsList .solo {
