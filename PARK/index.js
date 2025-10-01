@@ -32,9 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
       cards.forEach((card) => {
         if (category === "Pall") {
           card.style.display = "block";
+        } else if (window.innerWidth < 878) {
+          card.style.display = "flex";
         } else {
           if (card.classList.contains(category)) {
             card.style.display = "block";
+          } else if (window.innerWidth < 878) {
+            card.style.display = "flex";
           } else {
             card.style.display = "none";
           }
@@ -45,14 +49,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // category fixed sidebar observer
-const sidebar = document.querySelector(".Pservice__category-buttonwrapper");
-const sidebarKeyframes = { position: fixed };
-const sidebarOptions = {};
-const sidebarObserver = new IntersectionObserver((targets, me) => {
-  targets.forEach((v, i) => {
-    if (target.isIntersecting) v.target.animate();
-  });
-});
+// const sidebar = document.querySelector(".Pservice__category-buttonwrapper");
+// const sidebarKeyframes = { position: fixed };
+// const sidebarOptions = {};
+// const sidebarObserver = new IntersectionObserver((targets, me) => {
+//   targets.forEach((v, i) => {
+//     if (target.isIntersecting) v.target.animate();
+//   });
+// });
 
 //   document.addEventListener("DOMContentLoaded", () => {
 //   const buttons = document.querySelectorAll(".Pservice__cartegory-button");
