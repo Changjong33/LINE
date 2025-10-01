@@ -1,26 +1,48 @@
+/* 헤더 로고 */
 .Sko {
   position: fixed;
   width: 100%;
   height: 75px;
   opacity: 0.95;
   background: #fff;
-  z-index: 99999;
-  top: 0px;
-  left: 0px;
+  z-index: 9999;
+  top: 0;
+  left: 0;
 }
+
 .Sko > div {
   height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   align-items: center;
   position: relative;
 }
+
 .Sko > div > h1 {
   position: absolute;
   top: 30px;
   left: 30px;
 }
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 43px;
+  height: 16px;
+}
+
+.logoImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  opacity: 1;
+}
+
+/* 헤더 메뉴 */
 .SheaderMenu {
   position: relative;
   text-align: center;
@@ -31,12 +53,26 @@
   white-space: nowrap;
   font-weight: 700;
 }
+
 .SheaderMenu > li {
   display: inline-block;
   margin-right: 80px;
   line-height: 1.23;
   padding-bottom: 4px;
 }
+
+.ScurrentLine {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 93px;
+  height: 4px;
+  background-color: black;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+/* 언어 선택 */
 .SlangMenuTop {
   display: block;
   width: 55px;
@@ -48,13 +84,15 @@
   z-index: 10;
   cursor: pointer;
 }
+
 .ScurrentLang {
   font-size: 14px;
 }
+
 .SlangMenu {
   display: none;
   position: absolute;
-  background: white;
+  background: #fff;
   border: 1px solid #ccc;
   padding: 10px;
   list-style: none;
@@ -76,15 +114,22 @@
 .SlangMenu li:hover {
   background-color: #eee;
 }
-.ScurrentLine {
-  position: absolute;
-  bottom: 20px;
-  height: 4px;
-  background-color: black;
-  padding: 0px;
-  transition: all 0.3s ease;
+
+.Simage-warpper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
 }
+
+/* 다운로드 버튼*/
 .SdownloadBtn:hover {
-  background-color: green;
+  background-color: #07b53b;
   cursor: pointer;
+}
+
+/*  */
+
+@media screen and (max-width: 768px) {
 }

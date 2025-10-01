@@ -30,7 +30,7 @@
   <body>
     <!--로딩 화면(SON)-->
     <header class="Sko">
-      <div>
+      <div class="Sko-box">
         <!-- 라인 로고 -->
         <h1>
           <a href="">
@@ -59,28 +59,18 @@
                 alt=""
               />
             </div>
-            <!-- <div
-              class="onlySp image-warpper"
-              style="
-                position: relative;
-                overflow: hidden;
-                display: inline-block;
-                width: 38px;
-                height: 14px;
-              "
-            >
-              <img src="img/라인 로고.png" alt="" />
-            </div> -->
           </a>
         </h1>
         <!-- 1 nav Life on LINE 커뮤니케이션 서비스 버튼 -->
         <ul class="SheaderMenu onlyPc">
-          <li><a href="">Life on LINE</a></li>
-          <li><a href="">커뮤니케이션 앱</a></li>
-          <li><a href="">서비스</a></li>
+          <li id="SclickFirstBtn">
+            <a href="">Life on LINE</a>
+          </li>
+          <li id="SclickSecondBtn"><a href="">커뮤니케이션 앱</a></li>
+          <li id="SclickThirdBtn"><a href="">서비스</a></li>
           <li
             class="ScurrentLine"
-            style="left: 0px; width: 93px; transition: none"
+            style="left: 0px; width: 93px; transition: 0.2s ease-in-out"
           ></li>
         </ul>
         <!-- 2 현재 언어+ 로고-->
@@ -159,6 +149,7 @@
             </div>
           </div>
         </div>
+        <img src="img/hero1.jpg" alt="" />
       </div>
     </main>
     <!--섹션 2(LEE)-->

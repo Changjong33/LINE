@@ -54,3 +54,27 @@ buttons.forEach((btn) => {
     icon.className = originalClass;
   });
 });
+
+//헤더 버튼 클릭시 그 위치로 이동하는 js
+// document.querySelector("#SclickFirstBtn").addEventListener("click",()=>{
+//   document.querySelector("#SmvTarget1").scrollIntoView()
+// })
+// document.querySelector("#SclickSecondBtn").addEventListener("click",()=>{
+//   document.querySelector("#SmvTarget2").scrollIntoView()
+// })
+// document.querySelector("#SclickThirdBtn").addEventListener("click",()=>{
+//   document.querySelector("#SmvTarget3").scrollIntoView()
+// })
+//v 줄여봤는데 코드 길이가 별 차이 없음.. 버튼이 많아지면 줄어들 것 같긴함
+const clickList=(btn,target)=>{
+  document.querySelector(`#${btn}`).addEventListener("click",()=>{
+  document.querySelector(`#${target}`).scrollIntoView()
+})
+}
+clickList("SclickFirstBtn","SmvTarget1")
+clickList("SclickSecondBtn","SmvTarget2")
+clickList("SclickThirdBtn","SmvTarget3")
+
+
+//
+
