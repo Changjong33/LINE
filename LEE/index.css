@@ -406,7 +406,7 @@ span {
     height: 312px;
     top: 0;
     left: 0;
-    content: url("image/firstimghp.png");
+    content: url("img/firstimghp.png");
     object-fit: cover;
     /* position: relative;
     top: -70px; */
@@ -419,7 +419,7 @@ span {
     height: 312px;
     top: 0;
     left: 0;
-    content: url("image/secondimghp.png");
+    content: url("img/secondimghp.png");
     object-fit: cover;
   }
 
