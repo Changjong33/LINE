@@ -1,7 +1,7 @@
 /* 헤더 로고 */
 .Sko {
   position: fixed !important;
-  width: 100%;
+  width: 100vw;
   height: 75px;
   opacity: 0.95;
   background: #fff;
@@ -11,6 +11,7 @@
 }
 
 .Sko > div {
+  width:100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -21,6 +22,16 @@
   position: absolute;
   top: 30px;
   left: 30px;
+}
+.logo{
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  opacity: 1;
 }
 
 .image-wrapper {
@@ -74,7 +85,8 @@
 
 /* 언어 선택 */
 .SlangMenuTop {
-  display: block;
+  display: flex;
+  gap:5px;
   width: 55px;
   top: 26px;
   right: 30px;
@@ -84,7 +96,11 @@
   z-index: 10;
   cursor: pointer;
 }
-
+.iconLang{
+  position: absolute;
+  right:60px;
+  bottom:-5px;
+}
 .ScurrentLang {
   font-size: 14px;
 }
@@ -130,19 +146,18 @@
 }
 
 /*  */
-.onlyPc {
-  display: block;
+.onlySp {
+  display:none;
 }
-@media screen and (max-width: 768px) {
-  .onlyPc {
+@media (max-width: 878px) {
+  .Sko{
+    background-color: transparent;
+  }
+  .onlyPc{
     display: none;
   }
-  .Sko {
-    position: fixed !important;
-    width: 100%;
-    height: 75px;
-    opacity: 0.95;
-    background: transparent;
-    z-index: 9999;
-  }
+  .onlySp {
+  display:block;
+  color:white
+}
 }
