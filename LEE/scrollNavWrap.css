@@ -23,7 +23,7 @@
 
 .LscrollNav {
   position: relative;
-  color: white;
+  color: black;
   top: 0;
   font-size: 11px;
   animation: 1.4s ease 0s infinite normal none running equallyBound;
@@ -49,7 +49,7 @@
   height: 80px;
   left: 16px;
   bottom: -115px;
-  background-color: white;
+  background-color: black;
   animation: LineMove 0.9s ease-in-out infinite;
 }
 
