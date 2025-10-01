@@ -6,16 +6,9 @@
   line-height: 1.5;
   top: 0px;
   left: 0px;
+  overflow: hidden;
 }
-.SmvArea > .mainImg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 3;
-  visibility: hidden;
-}
+
 .SmvText {
   /* border: 1px solid red; */
   position: absolute;

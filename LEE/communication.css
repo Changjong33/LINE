@@ -5,6 +5,7 @@
   padding: 180px 0px;
   background-color: #f7f8f9;
   text-align: center;
+  z-index: -2;
 }
 
 .Lmain_sub {

@@ -15,9 +15,18 @@ document.querySelectorAll(".Pservice__card").forEach((card) => {
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".Pservice__category-button");
   const cards = document.querySelectorAll(".Pservice__card");
-
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
+      buttons.forEach((btn) => {
+        btn.style.color = "rgba(30, 30, 30, 0.7)";
+        btn.style.backgroundColor = "white";
+        btn.style.border = "1px solid rgba(30, 30, 30, 0.2)";
+      });
+
+      button.style.color = "white";
+      button.style.backgroundColor = "#07b53b";
+      button.style.border = "1px solid #07b53b";
+
       const category = button.id;
 
       cards.forEach((card) => {
@@ -57,3 +66,32 @@ document.addEventListener("DOMContentLoaded", () => {
 //     });
 //   });
 // });
+
+// const clickBtn = {
+//   color: "white",
+//   backgroundColor: "#07b53b",
+//   border: "1px solid #07b53b",
+// };
+// const normalBtn = {
+//   color: "rgba(30, 30, 30, 0.7)",
+//   backgroundColor: "white",
+//   border: "1px solid rgba(30, 30, 30, 0.2)",
+// };
+
+// if (button.style.color === "rgba(30, 30, 30, 0.7)") {
+//   button.style.color = "white";
+// } else {
+//   button.style.color = "rgba(30, 30, 30, 0.7)";
+// }
+
+// button.
+// buttons.style.color =
+//   button.style.color == "rgba(30, 30, 30, 0.7)"
+//     ? "white"
+//     : "rgba(30, 30, 30, 0.7)";
+// button.style.backgroundColor =
+//   button.style.backgroundColor == "white" ? "#07b53b" : "white";
+// button.style.border =
+//   button.style.border == "1px solid rgba(30, 30, 30, 0.2)"
+//     ? "1px solid #07b53b"
+//     : "1px solid rgba(30, 30, 30, 0.2)";
