@@ -10,14 +10,14 @@
   left: 0;
 }
 
-.Sko > .Sko-box {
+.Sko > div {
   height: 100%;
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.Sko > .Sko-box > .Sko-bbox {
+.Sko > div > h1 {
   position: absolute;
   top: 30px;
   left: 30px;
