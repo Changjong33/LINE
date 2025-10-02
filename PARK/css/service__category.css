@@ -15,20 +15,22 @@
   top: 20%;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
 
   align-items: flex-start;
 }
-
+.hascolor {
+  color: rgba(30, 30, 30, 0.7);
+  background-color: white;
+  border: 1px solid rgba(30, 30, 30, 0.2);
+}
 .Pservice__category-button {
   font-size: 13px;
   font-weight: bold;
   line-height: 1.4;
 
-  color: rgba(30, 30, 30, 0.7);
-  background-color: white;
   padding: 8px 15px;
-  border: 1px solid rgba(30, 30, 30, 0.2);
+
   border-radius: 50px;
 }
 .clickbutton {
@@ -43,27 +45,37 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
     gap: 50px;
+    overflow: hidden;
   }
 
   .Pservice__category-buttonwrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
     order: 1;
-    width: 1100px;
+    width: 100%;
     position: relative;
     margin-left: 20px;
     top: 0;
     gap: 5px;
+    overflow-x: auto;
   }
 
+  .clickbutton {
+    color: white;
+    background-color: #07b53b;
+    border: 1px solid #07b53b;
+  }
+  .hascolor {
+    background-color: transparent;
+  }
   .Pservice__category-button {
-    width: 10%;
     height: 33px;
     padding: 8px 15px;
     font-size: 12px;
-
-    padding: 0;
+    font-weight: bold;
+    min-width: 108px;
+    white-space: nowrap;
   }
 }

@@ -184,6 +184,7 @@
 
 .background-image {
   position: absolute;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -194,22 +195,8 @@
   background-color: lightblue;
   background: url(../LEE/img/background.jpg);
   background-position: 50%, 50%;
-  top: calc(50% - 80px);
-  left: calc(50% - 360px);
-  width: 720px;
-  height: 160px;
-
-  background-color: transparent;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 1;
-  opacity: 0;
-  transform-origin: left;
-  animation: fadeIn 0s 1.8s ease-in-out forwards,
-    irisWipe 1s 1.8s ease-out forwards, change 10s 3s linear infinite,
-    change2 10s 3s linear infinite;
 }
+
 @media (max-width: 878px) {
   .section-container {
     height: 50vh;
