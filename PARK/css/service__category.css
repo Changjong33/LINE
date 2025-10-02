@@ -59,11 +59,10 @@
   }
 
   .Pservice__category-button {
-    width: 10%;
+    width: 100px;
     height: 33px;
     padding: 8px 15px;
     font-size: 12px;
-
     padding: 0;
   }
 }
