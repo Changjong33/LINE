@@ -193,13 +193,12 @@
   transition: width 0.5s ease, height 0.5s ease;
   background-color: lightblue;
   background: url(../LEE/img/background.jpg);
-
   background-position: 50%, 50%;
   top: calc(50% - 80px);
   left: calc(50% - 360px);
   width: 720px;
   height: 160px;
-  background-image: url("https://www.line.me/static/img/mv01_w1000.jpg");
+
   background-color: transparent;
   background-size: cover;
   background-position: center;
