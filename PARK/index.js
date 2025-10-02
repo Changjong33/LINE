@@ -1,51 +1,56 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//   // 버튼 & 카드 선택
-//   const buttons = document.querySelectorAll(".Pservice__category-button");
-//   const cards = document.querySelectorAll(".Pservice__card");
+// const buttons = document.querySelectorAll(".Pservice__category-button");
+// const cards = document.querySelectorAll(".Pservice__card");
 
-//   // 오버레이 마우스 이벤트 (hover)
-//   cards.forEach((card) => {
-//     const overlay = card.querySelector(".Pcard__overlay");
-//     if (!overlay) return;
+// buttons.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     // 버튼 스타일 변경은 클래스 기반으로 (인라인 스타일 제거)
+//     buttons.forEach((btn) => btn.classList.remove("active"));
+//     button.classList.add("active");
 
-//     card.addEventListener("mouseenter", () => {
-//       overlay.classList.add("show");
-//     });
-//     card.addEventListener("mouseleave", () => {
-//       overlay.classList.remove("show");
-//     });
-//   });
+//     const category = button.id;
 
-//   // 버튼 클릭 처리: 클래스 기반으로 토글 (인라인 스타일 사용 X)
-//   buttons.forEach((button) => {
-//     button.addEventListener("click", () => {
-//       // 모든 버튼에서 active 제거
-//       buttons.forEach((b) => b.classList.remove("active"));
+//     cards.forEach((card) => {
+//       // 다른 스크립트/스타일이 남긴 inline display를 초기화해서
+//       // CSS(미디어쿼리)가 레이아웃을 결정하게 함
+//       card.style.display = "";
 
-//       // 클릭한 버튼에 active 추가
-//       button.classList.add("active");
-
-//       // 선택된 카테고리 id (예: "Pall", "comu", ...)
-//       const category = button.id;
-
-//       // 카드 표시/숨김: .hidden 클래스 토글
-//       cards.forEach((card) => {
-//         if (category === "Pall") {
+//       if (category === "Pall") {
+//         card.classList.remove("hidden");
+//       } else {
+//         if (card.classList.contains(category)) {
 //           card.classList.remove("hidden");
 //         } else {
-//           if (card.classList.contains(category)) {
-//             card.classList.remove("hidden");
-//           } else {
-//             card.classList.add("hidden");
-//           }
+//           card.classList.add("hidden");
 //         }
-//       });
+//       }
 //     });
 //   });
+// });
 
-//   // 기본 상태: 페이지 로드 시 All 선택
-//   const defaultBtn = document.getElementById("Pall");
-//   if (defaultBtn) defaultBtn.click();
+// // 기본 상태: 페이지 로드 시 All 선택
+// const defaultBtn = document.getElementById("Pall");
+// if (defaultBtn) defaultBtn.click();
+
+// // 창 크기 변경 시에도 안전하게 동작하도록 재적용
+// window.addEventListener("resize", () => {
+//   const activeBtn =
+//     document.querySelector(".Pservice__category-button.active") || defaultBtn;
+//   const activeCat = activeBtn ? activeBtn.id : "Pall";
+
+//   cards.forEach((card) => {
+//     // inline display 초기화
+//     card.style.display = "";
+
+//     if (activeCat === "Pall") {
+//       card.classList.remove("hidden");
+//     } else {
+//       if (card.classList.contains(activeCat)) {
+//         card.classList.remove("hidden");
+//       } else {
+//         card.classList.add("hidden");
+//       }
+//     }
+//   });
 // });
 
 // card screen 동작
