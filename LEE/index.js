@@ -15,11 +15,15 @@ window.addEventListener("scroll", () => {
     box.style.height = reducedHeight;
     SmvText.style.opacity = "0";
     LscrollNavWrap.style.opacity = "0";
+
+    LmainTitle_area.style.opacity = "1";
   } else {
     box.style.width = originalWidth;
     box.style.height = originalHeight;
     SmvText.style.opacity = "1";
     LscrollNavWrap.style.opacity = "1";
+
+    LmainTitle_area.style.opacity = "0";
   }
 });
 
