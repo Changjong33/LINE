@@ -1,32 +1,33 @@
-// const buttons = document.querySelectorAll(".Pservice__category-button");
-// const cards = document.querySelectorAll(".Pservice__card");
+// document.addEventListener("DOMContentLoaded", () => {
+//   const buttons = document.querySelectorAll(".Pservice__category-button");
+//   const cards = document.querySelectorAll(".Pservice__card");
 
-// buttons.forEach((button) => {
-//   button.addEventListener("click", () => {
-//     // 버튼 스타일 변경은 클래스 기반으로 (인라인 스타일 제거)
-//     buttons.forEach((btn) => btn.classList.remove("active"));
-//     button.classList.add("active");
+//   buttons.forEach((button) => {
+//     button.addEventListener("click", () => {
+//       // 버튼 스타일 변경은 클래스 기반으로 (인라인 스타일 제거)
+//       buttons.forEach((btn) => btn.classList.remove("active"));
+//       button.classList.add("active");
 
-//     const category = button.id;
+//       const category = button.id;
 
-//     cards.forEach((card) => {
-//       // 다른 스크립트/스타일이 남긴 inline display를 초기화해서
-//       // CSS(미디어쿼리)가 레이아웃을 결정하게 함
-//       card.style.display = "";
+//       cards.forEach((card) => {
+//         // 다른 스크립트/스타일이 남긴 inline display를 초기화해서
+//         // CSS(미디어쿼리)가 레이아웃을 결정하게 함
+//         card.style.display = "";
 
-//       if (category === "Pall") {
-//         card.classList.remove("hidden");
-//       } else {
-//         if (card.classList.contains(category)) {
+//         if (category === "Pall") {
 //           card.classList.remove("hidden");
 //         } else {
-//           card.classList.add("hidden");
+//           if (card.classList.contains(category)) {
+//             card.classList.remove("hidden");
+//           } else {
+//             card.classList.add("hidden");
+//           }
 //         }
-//       }
+//       });
 //     });
 //   });
 // });
-
 // // 기본 상태: 페이지 로드 시 All 선택
 // const defaultBtn = document.getElementById("Pall");
 // if (defaultBtn) defaultBtn.click();
