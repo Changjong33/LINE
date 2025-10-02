@@ -23,7 +23,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const Limages = ["../LEE/img/background.jpg", "../LEE/img/background1.jpg"];
+const Limages = ["LEE/img/background.jpg", "LEE/img/background1.jpg"];
 
 let Lindex = 0;
 
