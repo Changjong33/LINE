@@ -33,3 +33,11 @@
   animation-name: startTexArea;
   animation-duration: 2.5s;
 }
+@media (max-width: 878px) {
+  .Sko {
+    animation-name: none;
+  }
+  .SmvText {
+    animation-name: none;
+  }
+}
