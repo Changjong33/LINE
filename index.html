@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="PARK/css/service__header.css" />
     <link rel="stylesheet" href="PARK/css/service__category.css" />
     <link rel="stylesheet" href="PARK/css/service__card.css" />
-    <script src="PARK/index.js" defer></script>
+    <script type="module" src="PARK/index.js" defer></script>
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -269,25 +269,35 @@
         >
       </div>
       <section class="Pservice__category">
-        <ul class="Pservice__category-buttonwrapper">
+        <div class="Pservice__category-buttonwrapper">
           <button id="Pall" class="Pservice__category-button clickbutton">
             All Product
           </button>
-          <button id="comu" class="Pservice__category-button">
+          <button id="comu" class="Pservice__category-button hascolor">
             커뮤니케이션
           </button>
-          <button id="enter" class="Pservice__category-button">
+          <button id="enter" class="Pservice__category-button hascolor">
             엔터테인먼트
           </button>
-          <button id="life" class="Pservice__category-button">
+          <button id="life" class="Pservice__category-button hascolor">
             라이프 스타일
           </button>
-          <button id="shop" class="Pservice__category-button">쇼핑</button>
-          <button id="tech" class="Pservice__category-button">핀테크</button>
-          <button id="busi" class="Pservice__category-button">비즈니스</button>
-          <button id="news" class="Pservice__category-button">뉴스</button>
-          <button id="game" class="Pservice__category-button">게임</button>
-        </ul>
+          <button id="shop" class="Pservice__category-button hascolor">
+            쇼핑
+          </button>
+          <button id="tech" class="Pservice__category-button hascolor">
+            핀테크
+          </button>
+          <button id="busi" class="Pservice__category-button hascolor">
+            비즈니스
+          </button>
+          <button id="news" class="Pservice__category-button hascolor">
+            뉴스
+          </button>
+          <button id="game" class="Pservice__category-button hascolor">
+            게임
+          </button>
+        </div>
 
         <div class="Pservice__card-wrapper">
           <article class="Pservice__card comu Pall">
