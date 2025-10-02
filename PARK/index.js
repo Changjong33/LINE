@@ -1,3 +1,58 @@
+// const buttons = document.querySelectorAll(".Pservice__category-button");
+// const cards = document.querySelectorAll(".Pservice__card");
+
+// buttons.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     // 버튼 스타일 변경은 클래스 기반으로 (인라인 스타일 제거)
+//     buttons.forEach((btn) => btn.classList.remove("active"));
+//     button.classList.add("active");
+
+//     const category = button.id;
+
+//     cards.forEach((card) => {
+//       // 다른 스크립트/스타일이 남긴 inline display를 초기화해서
+//       // CSS(미디어쿼리)가 레이아웃을 결정하게 함
+//       card.style.display = "";
+
+//       if (category === "Pall") {
+//         card.classList.remove("hidden");
+//       } else {
+//         if (card.classList.contains(category)) {
+//           card.classList.remove("hidden");
+//         } else {
+//           card.classList.add("hidden");
+//         }
+//       }
+//     });
+//   });
+// });
+
+// // 기본 상태: 페이지 로드 시 All 선택
+// const defaultBtn = document.getElementById("Pall");
+// if (defaultBtn) defaultBtn.click();
+
+// // 창 크기 변경 시에도 안전하게 동작하도록 재적용
+// window.addEventListener("resize", () => {
+//   const activeBtn =
+//     document.querySelector(".Pservice__category-button.active") || defaultBtn;
+//   const activeCat = activeBtn ? activeBtn.id : "Pall";
+
+//   cards.forEach((card) => {
+//     // inline display 초기화
+//     card.style.display = "";
+
+//     if (activeCat === "Pall") {
+//       card.classList.remove("hidden");
+//     } else {
+//       if (card.classList.contains(activeCat)) {
+//         card.classList.remove("hidden");
+//       } else {
+//         card.classList.add("hidden");
+//       }
+//     }
+//   });
+// });
+
 // card screen 동작
 document.querySelectorAll(".Pservice__card").forEach((card) => {
   const overlay = card.querySelector(".Pcard__overlay");
@@ -10,17 +65,6 @@ document.querySelectorAll(".Pservice__card").forEach((card) => {
     overlay.classList.remove("show");
   });
 });
-// button swiper
-// const buttonSwiper = new Swiper(".Pswiper", {
-//   freeMode: true,
-// });
-
-// const buttonSwiper = new Swiper(".Pservice__category-buttonwrapper", {
-//   freeMode: {
-//     enabled: true,
-//     sticky: true,
-//   },
-// });
 
 // 카테고리
 document.addEventListener("DOMContentLoaded", () => {
@@ -54,6 +98,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// button swiper
+// const buttonSwiper = new Swiper(".Pswiper", {
+//   freeMode: true,
+// });
+
+// const buttonSwiper = new Swiper(".Pservice__category-buttonwrapper", {
+//   freeMode: {
+//     enabled: true,
+//     sticky: true,
+//   },
+// });
 
 // const Pswiper = new Swiper(".swiper", {
 // Optional parameters
