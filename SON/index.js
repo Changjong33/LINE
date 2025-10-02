@@ -74,15 +74,3 @@ clickList("SclickFirstBtn", "SmvTarget1");
 clickList("SclickSecondBtn", "SmvTarget2");
 clickList("SclickThirdBtn", "SmvTarget3");
 
-// 배경이 자동으로 바뀌게 하는 것 이해 완료 설명 가능
-// const section = document.querySelector(".background-image");
-// const images = [
-//   "https://www.line.me/static/img/mv01_w1000.jpg",
-//   "https://www.line.me/static/img/mv02_w1000.jpg",
-// ];
-// let current = 0;
-
-// setInterval(() => {
-//   current = (current + 1) % 2;
-//   section.style.backgroundImage = `url(${images[current]})`;
-// }, 5000);

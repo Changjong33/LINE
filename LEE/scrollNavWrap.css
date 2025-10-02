@@ -20,6 +20,7 @@
   height: 130px;
   background-color: transparent;
   z-index: 3;
+  transition: all 0.3;
 }
 
 .LscrollNav {
