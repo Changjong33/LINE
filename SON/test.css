@@ -92,7 +92,7 @@
   60%,
   80% {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1);
     transform-origin: center;
   }
   100% {
@@ -103,6 +103,52 @@
     width: 100vw;
     top: 0;
     left: 0;
+  }
+}
+@keyframes change {
+  0% {
+    background-image: url("https://www.line.me/static/img/mv01_w1000.jpg");
+    opacity: 9;
+  }
+  40% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    background-image: url("https://www.line.me/static/img/mv02_w1000.jpg");
+    opacity: 0.9;
+  }
+  55% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -137,6 +183,7 @@
 
 .background-image {
   position: absolute;
+<<<<<<< HEAD
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -148,4 +195,39 @@
   background: url(../LEE/img/background.jpg);
 
   background-position: 50%, 50%;
+=======
+  top: calc(50% - 80px);
+  left: calc(50% - 360px);
+  width: 720px;
+  height: 160px;
+  background-image: url("https://www.line.me/static/img/mv01_w1000.jpg");
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  opacity: 0;
+  transform-origin: left;
+  animation: fadeIn 0s 1.8s ease-in-out forwards,
+    irisWipe 1s 1.8s ease-out forwards, change 7s 3s linear infinite;
+}
+@media (max-width: 878px) {
+  .section-container {
+    height: 40vh;
+  }
+  .background-image {
+    width: 36%;
+    height: 500px;
+    animation: change 7s 3s linear infinite;
+    opacity: 1; /* fadeIn 잔상 제거 */
+    transform: none; /* irisWipe 잔상 제거 */
+    position: absolute;
+    top: calc(0%);
+    left: calc(0%);
+    background-image: url("https://www.line.me/static/img/mv01_w1000.jpg");
+  }
+  .animated-bar {
+    display: none;
+  }
+>>>>>>> fc2f90af3d00b96fa6cea538076dab01341d183a
 }

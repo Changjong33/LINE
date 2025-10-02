@@ -21,3 +21,15 @@
   line-height: 1.5;
   margin-bottom: 70px;
 }
+
+@media (max-width: 878px) {
+  .Pservice__header-title {
+    font-size: 28px;
+    line-height: 0px;
+  }
+  .Pservice__header-sub {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
