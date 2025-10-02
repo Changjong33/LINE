@@ -184,7 +184,11 @@
 
 .background-image {
   position: absolute;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> 880d4daa770b5e28e4471e825b45aec3c8078ff1
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -192,9 +196,39 @@
   height: 953px;
   box-sizing: border-box;
   transition: width 0.5s ease, height 0.5s ease;
+<<<<<<< HEAD
   background-color: lightblue;
   background: url(../LEE/img/background.jpg);
   background-position: 50%, 50%;
+=======
+
+  background: url(../LEE/img/background.jpg) center / cover no-repeat;
+
+  background-position: 50%, 50%;
+
+  /* background-position: 50%, 50%;
+=======
+>>>>>>> d2ba3930dca41b3636b95e09d9f412e9b1cf03d8
+  top: calc(50% - 80px);
+  left: calc(50% - 360px);
+  width: 720px;
+  height: 160px;
+  background-image: url("https://www.line.me/static/img/mv01_w1000.jpg");
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  opacity: 0;
+  transform-origin: left;
+  animation: fadeIn 0s 1.8s ease-in-out forwards,
+<<<<<<< HEAD
+    irisWipe 1s 1.8s ease-out forwards, change 7s 3s linear infinite; */
+=======
+    irisWipe 1s 1.8s ease-out forwards, change 10s 3s linear infinite,
+    change2 10s 3s linear infinite;
+>>>>>>> d2ba3930dca41b3636b95e09d9f412e9b1cf03d8
+>>>>>>> 880d4daa770b5e28e4471e825b45aec3c8078ff1
 }
 
 @media (max-width: 878px) {

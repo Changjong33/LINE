@@ -2,6 +2,7 @@ const box = document.querySelector(".background-image");
 const SmvText = document.querySelector(".SmvText");
 const LscrollNavWrap = document.querySelector(".LscrollNavWrap");
 
+// 스크롤할 경우 box w * h 크기 변경
 const originalWidth = "100%";
 const originalHeight = "100%";
 const reducedWidth = "65%";
@@ -22,3 +23,35 @@ window.addEventListener("scroll", () => {
     LscrollNavWrap.style.opacity = "1";
   }
 });
+
+const Limages = ["../LEE/img/background.jpg", "../LEE/img/background1.jpg"];
+
+let Lindex = 0;
+
+function animateBackground() {
+  box.style.backgroundSize = "110%";
+
+  const start = performance.now();
+  function step(now) {
+    const LfirstImg = Math.min((now - start) / 4000, 1);
+    const Lsize = 110 - 10 * LfirstImg;
+    box.style.backgroundSize = `${Lsize}%`;
+
+    // const Lopacity = 1 - 0.5 * LfirstImg;
+    // box.style.opacity = Lopacity;
+
+    if (LfirstImg < 1) {
+      requestAnimationFrame(step);
+    } else {
+      Lindex = (Lindex + 1) % Limages.length;
+      box.style.backgroundImage = `url('${Limages[Lindex]}')`;
+
+      // box.style.opacity = 1;
+
+      animateBackground();
+    }
+  }
+  requestAnimationFrame(step);
+}
+
+animateBackground();
