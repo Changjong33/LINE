@@ -198,6 +198,11 @@
 /* background-position: 50%, 50%;
 >>>>>>> d2ba3930dca41b3636b95e09d9f412e9b1cf03d8
   top: calc(50% - 80px);
+=======
+  /* background-position: 50%, 50%;
+
+top: calc(50% - 80px);
+>>>>>>> 25094a6416bd3c0755ee151201a1b173d83c2451
   left: calc(50% - 360px);
   width: 720px;
   height: 160px;
@@ -210,7 +215,7 @@
   opacity: 0;
   transform-origin: left;
   animation: fadeIn 0s 1.8s ease-in-out forwards,
-<<<<<<< HEAD
+
     irisWipe 1s 1.8s ease-out forwards, change 7s 3s linear infinite; */
 
 @media (max-width: 878px) {
@@ -227,7 +232,6 @@
     position: absolute;
     top: calc(0%);
     left: calc(0%);
-    background-image: url("https://www.line.me/static/img/mv01_w1000.jpg");
   }
   .animated-bar {
     display: none;
