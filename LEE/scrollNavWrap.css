@@ -82,4 +82,7 @@
   .Lmain_screen {
     display: none;
   }
+  .LscrollNavWrap {
+    display: none;
+  }
 }
