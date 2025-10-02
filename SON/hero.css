@@ -86,59 +86,58 @@
   transform: scale(1.2);
 }
 @media (max-width: 878px) {
-  .SmvArea{
-  position: relative;
-  width: 100vw;
-  height: 64vh;
-  min-width: 1200px;
-  line-height: 1.5;
-  top: 0px;
-  left: 32%;
-  overflow: hidden;
+  .SmvArea {
+    position: relative;
+    width: 100vw;
+    height: 64vh;
+    min-width: 1200px;
+    line-height: 1.5;
+    top: 0px;
+    left: 32%;
+    overflow: hidden;
   }
- .SmvText {
-  position: absolute;
-  top: 45%;
-  left: 2%;
-  z-index: 3;
-
-}
-.SmainTitle {
-  font-size: 50px;
-  font-weight: 900;
-  color: white;
-}
-.SmvSubText {
-  font-size: 16px;
-  text-indent: 8px; /* 안쪽으로 들여쓰기 하는 느낌인데 8px로 줘서 반응형 할 때 문제 생길수도*/
-  margin-bottom: 1%;
-  font-weight: 400;
-  color: white;
-  margin-bottom: 50px;
-}
-.SmvDownload{
-  position: absolute;
-  top:120px;
-}
-.SiconText{
-  border:1px solid white;
-  width:170px;
-  height:50px;
-  border-radius: 3px;;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap:0;
-}
-.SiconText>img{
-  width:20%;
-  height:50%;
-  padding-left:10px;
-}
-.SiconText>p{
-  padding-right:50px;
-}
-.SdownloadBtnList{
-  display: none;
-}
+  .SmvText {
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    z-index: 3;
+  }
+  .SmainTitle {
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+  }
+  .SmvSubText {
+    font-size: 16px;
+    text-indent: 8px; /* 안쪽으로 들여쓰기 하는 느낌인데 8px로 줘서 반응형 할 때 문제 생길수도*/
+    margin-bottom: 1%;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 50px;
+  }
+  .SmvDownload {
+    position: absolute;
+    top: 120px;
+  }
+  .SiconText {
+    border: 1px solid white;
+    width: 170px;
+    height: 50px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+  }
+  .SiconText > img {
+    width: 20%;
+    height: 50%;
+    padding-left: 10px;
+  }
+  .SiconText > p {
+    padding-right: 50px;
+  }
+  .SdownloadBtnList {
+    display: none;
+  }
 }

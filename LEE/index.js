@@ -1,6 +1,7 @@
 const box = document.querySelector(".background-image");
 const SmvText = document.querySelector(".SmvText");
 const LscrollNavWrap = document.querySelector(".LscrollNavWrap");
+const LmainTitle_area = document.querySelector(".LmainTitle_area");
 
 // 스크롤할 경우 box w * h 크기 변경
 const originalWidth = "100%";
@@ -10,13 +11,11 @@ const reducedHeight = "40%";
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
-    box.style.animationPlayState = "paused";
     box.style.width = reducedWidth;
     box.style.height = reducedHeight;
     SmvText.style.opacity = "0";
     LscrollNavWrap.style.opacity = "0";
   } else {
-    box.style.animationPlayState = "running";
     box.style.width = originalWidth;
     box.style.height = originalHeight;
     SmvText.style.opacity = "1";

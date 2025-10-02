@@ -1,11 +1,32 @@
 .LmainTitle_area {
-  width: 100%;
-  height: 100%;
+  width: 1905px;
+  height: 177px;
+  position: relative;
+  z-index: 1;
+  bottom: 100px;
+
+  transition: all 0.3s;
 }
 
-.LmainTitle_area .Lmain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.Lmain {
+  position: absolute;
+  bottom: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+
+  font-size: 70px;
+
+  margin: 0px 0px 20px;
+}
+
+.Lsub {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #616161;
+  line-height: 1.7;
+
   text-align: center;
 }
