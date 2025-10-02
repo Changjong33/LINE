@@ -92,7 +92,7 @@
   60%,
   80% {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1);
     transform-origin: center;
   }
   100% {
@@ -111,17 +111,17 @@
     opacity: 9;
   }
   40% {
-    opacity: 1; 
+    opacity: 1;
   }
-  45%{
-    opacity:1;
+  45% {
+    opacity: 1;
   }
   50% {
     background-image: url("https://www.line.me/static/img/mv02_w1000.jpg");
-    opacity: 0.9; 
+    opacity: 0.9;
   }
-  55%{
-    opacity:1;
+  55% {
+    opacity: 1;
   }
   60% {
     opacity: 1;
@@ -131,10 +131,10 @@
   }
   70% {
     opacity: 1;
-  }  
+  }
   75% {
     opacity: 1;
-  }  
+  }
   80% {
     opacity: 1;
   }
@@ -151,7 +151,6 @@
     opacity: 1;
   }
 }
-
 
 .section-container {
   position: relative;
@@ -200,12 +199,12 @@
     irisWipe 1s 1.8s ease-out forwards, change 7s 3s linear infinite;
 }
 @media (max-width: 878px) {
-  .section-container{
-    height:40vh;
+  .section-container {
+    height: 40vh;
   }
- .background-image{
-  width:36%;
-  height:500px;
+  .background-image {
+    width: 36%;
+    height: 500px;
     animation: change 7s 3s linear infinite;
     opacity: 1; /* fadeIn 잔상 제거 */
     transform: none; /* irisWipe 잔상 제거 */
@@ -213,8 +212,8 @@
     top: calc(0%);
     left: calc(0%);
     background-image: url("https://www.line.me/static/img/mv01_w1000.jpg");
- }
- .animated-bar {
-  display: none;
-}
+  }
+  .animated-bar {
+    display: none;
+  }
 }
