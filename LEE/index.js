@@ -20,5 +20,3 @@ window.addEventListener("scroll", () => {
     LscrollNavWrap.style.opacity = "1";
   }
 });
-
-console.log(box);
