@@ -1,4 +1,4 @@
-const box = document.querySelector(".background-image");
+const box = document.querySelector(".section-container");
 
 const originalWidth = "1920px";
 const originalHeight = "953px";
