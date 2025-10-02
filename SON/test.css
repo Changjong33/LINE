@@ -221,3 +221,9 @@
     display: none;
   }
 }
+
+.Sresize {
+  width: 65%;
+  height: 40%;
+  border: 1px solid red;
+}

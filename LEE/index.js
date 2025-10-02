@@ -20,3 +20,7 @@ window.addEventListener("scroll", () => {
     LscrollNavWrap.style.opacity = "1";
   }
 });
+
+box.addEventListener("animationend", () => {
+  console.log("애니메이션 종료됨!");
+});
