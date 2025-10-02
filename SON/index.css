@@ -1,6 +1,6 @@
 /* 헤더 로고 */
 .Sko {
-  position: fixed !important;
+  position: fixed;
   width: 100vw;
   height: 75px;
   opacity: 0.95;
@@ -158,22 +158,24 @@
   }
   .onlySp {
     display: block;
-    color: white;
   }
   .SheaderMenu {
     position: relative;
     text-align: center;
     line-height: 4.5;
-    width: 400px;
-    height: 100%;
+    width: 100px;
+    height: 15%;
     margin: 0 auto;
     white-space: nowrap;
     font-weight: 700;
-    top: 500px;
-    right: 0px;
+    top: 40px;
+    right: 510px;
     background-color: white;
   }
   .SheaderMenu > li > a {
     font-size: 12px;
+  }
+  .white {
+    color: white;
   }
 }

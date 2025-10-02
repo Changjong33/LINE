@@ -15,13 +15,14 @@
     <link rel="stylesheet" href="LEE/communication.css" />
     <link rel="stylesheet" href="LEE/footer.css" />
     <link rel="stylesheet" href="LEE/scrollNavWrap.css" />
+    <link rel="stylesheet" href="LEE/mainTitle.css" />
     <script src="LEE/index.js" defer></script>
     <!--PARK-->
     <link rel="stylesheet" href="PARK/css/index.css" />
     <link rel="stylesheet" href="PARK/css/service__header.css" />
     <link rel="stylesheet" href="PARK/css/service__category.css" />
     <link rel="stylesheet" href="PARK/css/service__card.css" />
-    <script src="PARK/index.js" defer></script>
+    <script type="module" src="PARK/index.js" defer></script>
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -46,7 +47,7 @@
           </a>
         </h1>
         <!-- 1 nav Life on LINE 커뮤니케이션 서비스 버튼 -->
-        <ul class="SheaderMenu">
+        <ul class="SheaderMenu onlyPc">
           <li id="SclickFirstBtn"><a href="">Life on LINE</a></li>
           <li id="SclickSecondBtn"><a href="">커뮤니케이션 앱</a></li>
           <li id="SclickThirdBtn"><a href="">서비스</a></li>
@@ -71,7 +72,7 @@
           </li>
           <li class="SiconLang onlySp"></li>
           <li class="ScurrentLang onlyPc">KR</li>
-          <li class="ScurrentLang onlySp">KR</li>
+          <li class="ScurrentLang onlySp white">KR</li>
         </ul>
         <!--3 언어 선택하는 박스 있는 곳 -->
         <ul class="SlangMenu Sshow">
@@ -120,13 +121,30 @@
           <div class="animated-bar"></div>
           <span class="animated-bar-text">Life on Line</span>
         </section>
+        <ul class="SheaderMenu onlySp">
+          <li id="SclickFirstBtn2"><a href="">Life on LINE</a></li>
+          <li id="SclickSecondBtn2"><a href="">커뮤니케이션 앱</a></li>
+          <li id="SclickThirdBtn2"><a href="">서비스</a></li>
+          <li class="ScurrentLine"></li>
+        </ul>
       </div>
     </main>
     <!--섹션 2(LEE)-->
-    <div class="LscrollNavWrap">
-      <span class="LscrollNav">Scroll</span>
-      <div class="LscrollLine"></div>
-    </div>
+    <section class="Lswipe">
+      <div class="Lbox">
+        <div class="LscrollNavWrap">
+          <span class="LscrollNav">Scroll</span>
+          <div class="LscrollLine"></div>
+        </div>
+      </div>
+      <div class="LmainTitle_area">
+        <h2 class="Lmain">Life on LINE</h2>
+        <span class="Lsub">
+          메신저 앱 그 이상의 경험을 제공합니다. <br />라인은 새로운 인프라
+          경험, 새로운 커뮤니케이션 경험을 모두에게 전달하고자 합니다.
+        </span>
+      </div>
+    </section>
     <section id="LmainService">
       <div class="Lgrid">
         <span class="Ldot bottom">・</span>
@@ -269,25 +287,35 @@
         >
       </div>
       <section class="Pservice__category">
-        <ul class="Pservice__category-buttonwrapper">
+        <div class="Pservice__category-buttonwrapper">
           <button id="Pall" class="Pservice__category-button clickbutton">
             All Product
           </button>
-          <button id="comu" class="Pservice__category-button">
+          <button id="comu" class="Pservice__category-button hascolor">
             커뮤니케이션
           </button>
-          <button id="enter" class="Pservice__category-button">
+          <button id="enter" class="Pservice__category-button hascolor">
             엔터테인먼트
           </button>
-          <button id="life" class="Pservice__category-button">
+          <button id="life" class="Pservice__category-button hascolor">
             라이프 스타일
           </button>
-          <button id="shop" class="Pservice__category-button">쇼핑</button>
-          <button id="tech" class="Pservice__category-button">핀테크</button>
-          <button id="busi" class="Pservice__category-button">비즈니스</button>
-          <button id="news" class="Pservice__category-button">뉴스</button>
-          <button id="game" class="Pservice__category-button">게임</button>
-        </ul>
+          <button id="shop" class="Pservice__category-button hascolor">
+            쇼핑
+          </button>
+          <button id="tech" class="Pservice__category-button hascolor">
+            핀테크
+          </button>
+          <button id="busi" class="Pservice__category-button hascolor">
+            비즈니스
+          </button>
+          <button id="news" class="Pservice__category-button hascolor">
+            뉴스
+          </button>
+          <button id="game" class="Pservice__category-button hascolor">
+            게임
+          </button>
+        </div>
 
         <div class="Pservice__card-wrapper">
           <article class="Pservice__card comu Pall">
