@@ -10,6 +10,17 @@ document.querySelectorAll(".Pservice__card").forEach((card) => {
     overlay.classList.remove("show");
   });
 });
+// button swiper
+// const buttonSwiper = new Swiper(".Pswiper", {
+//   freeMode: true,
+// });
+
+// const buttonSwiper = new Swiper(".Pservice__category-buttonwrapper", {
+//   freeMode: {
+//     enabled: true,
+//     sticky: true,
+//   },
+// });
 
 // 카테고리
 document.addEventListener("DOMContentLoaded", () => {
@@ -31,14 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       cards.forEach((card) => {
         if (category === "Pall") {
-          card.style.display = "block";
-        } else if (window.innerWidth < 878) {
-          card.style.display = "flex";
+          card.style.display = window.innerWidth < 878 ? "flex" : "block";
         } else {
           if (card.classList.contains(category)) {
-            card.style.display = "block";
-          } else if (window.innerWidth < 878) {
-            card.style.display = "flex";
+            card.style.display = window.innerWidth < 878 ? "flex" : "block";
           } else {
             card.style.display = "none";
           }
@@ -48,8 +55,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// const Pswiper = new Swiper(".Pservice__category", {
+// Optional parameters
+//
+// freeMode: {
+//   sticky: true,
+//   enabled: true,
+// },
+// });
+
 // category fixed sidebar observer
-// const sidebar = document.querySelector(".Pservice__category-buttonwrapper");
+// const buttonSwiper = document.querySelector(
+//   ".Pservice__category-buttonwrapper"
+// );
 // const sidebarKeyframes = { position: fixed };
 // const sidebarOptions = {};
 // const sidebarObserver = new IntersectionObserver((targets, me) => {
