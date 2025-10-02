@@ -184,7 +184,15 @@
 
 .background-image {
   position: absolute;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> 880d4daa770b5e28e4471e825b45aec3c8078ff1
+>>>>>>> de5afb722197050954a2cbc700d8758ce218a73c
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -192,6 +200,11 @@
   height: 953px;
   box-sizing: border-box;
   transition: width 0.5s ease, height 0.5s ease;
+<<<<<<< HEAD
+  background-color: lightblue;
+  background: url(../LEE/img/background.jpg);
+  background-position: 50%, 50%;
+=======
 
   background: url(../LEE/img/background.jpg) center / cover no-repeat;
 
@@ -214,6 +227,14 @@ top: calc(50% - 80px);
   animation: fadeIn 0s 1.8s ease-in-out forwards,
 
     irisWipe 1s 1.8s ease-out forwards, change 7s 3s linear infinite; */
+<<<<<<< HEAD
+=======
+=======
+    irisWipe 1s 1.8s ease-out forwards, change 10s 3s linear infinite,
+    change2 10s 3s linear infinite;
+>>>>>>> d2ba3930dca41b3636b95e09d9f412e9b1cf03d8
+>>>>>>> 880d4daa770b5e28e4471e825b45aec3c8078ff1
+>>>>>>> de5afb722197050954a2cbc700d8758ce218a73c
 }
 
 @media (max-width: 878px) {

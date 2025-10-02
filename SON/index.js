@@ -37,6 +37,7 @@ menuItems.forEach((item) => {
   });
 });
 
+
 // 요건 버튼 호버했을 때 안에 아이콘 바뀌는 애니메이션
 const buttons = document.querySelectorAll(".SdownloadBtn");
 
@@ -73,4 +74,5 @@ const clickList = (btn, target) => {
 clickList("SclickFirstBtn", "SmvTarget1");
 clickList("SclickSecondBtn", "SmvTarget2");
 clickList("SclickThirdBtn", "SmvTarget3");
+
 
