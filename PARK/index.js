@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       cards.forEach((card) => {
         if (category === "Pall") {
-          card.style.display = window.innerWidth < 878 ? "flex" : "block";
+          card.style.display = window.innerWidth <= 878 ? "flex" : "block";
         } else {
           if (card.classList.contains(category)) {
-            card.style.display = window.innerWidth < 878 ? "flex" : "block";
+            card.style.display = window.innerWidth <= 878 ? "flex" : "block";
           } else {
             card.style.display = "none";
           }
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// const Pswiper = new Swiper(".Pservice__category", {
+// const Pswiper = new Swiper(".swiper", {
 // Optional parameters
 //
 // freeMode: {
