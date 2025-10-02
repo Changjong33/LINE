@@ -73,3 +73,6 @@ const clickList = (btn, target) => {
 clickList("SclickFirstBtn", "SmvTarget1");
 clickList("SclickSecondBtn", "SmvTarget2");
 clickList("SclickThirdBtn", "SmvTarget3");
+clickList("SclickFirstBtn2", "SmvTarget1");
+clickList("SclickSecondBtn2", "SmvTarget2");
+clickList("SclickThirdBtn2", "SmvTarget3");
